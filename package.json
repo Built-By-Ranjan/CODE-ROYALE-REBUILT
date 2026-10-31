@@ -1,0 +1,8 @@
+{
+  "name": "code-royale-local",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Dependency-free offline LAN quiz game for two players and one admin",
+  "scripts": { "start": "node server.js", "check": "node --check server.js" },
+  "engines": { "node": ">=18" }
+}

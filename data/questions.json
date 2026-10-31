@@ -1,0 +1,2102 @@
+[
+  {
+    "id": "Q001",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "Which Python type is immutable?",
+    "options": [
+      "list",
+      "dict",
+      "tuple",
+      "set"
+    ],
+    "correct": 2,
+    "explanation": "Tuples cannot be changed after creation."
+  },
+  {
+    "id": "Q002",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "What does len([4, 8, 9]) return?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "8"
+    ],
+    "correct": 1,
+    "explanation": "There are three elements."
+  },
+  {
+    "id": "Q003",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "Which keyword defines a function?",
+    "options": [
+      "func",
+      "define",
+      "def",
+      "lambda"
+    ],
+    "correct": 2,
+    "explanation": "Python uses def to define a named function."
+  },
+  {
+    "id": "Q004",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "What is the result of 7 // 2?",
+    "options": [
+      "3.5",
+      "3",
+      "4",
+      "2"
+    ],
+    "correct": 1,
+    "explanation": "Floor division returns the quotient rounded down."
+  },
+  {
+    "id": "Q005",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "Which symbol starts a single-line comment?",
+    "options": [
+      "//",
+      "#",
+      "/*",
+      "--"
+    ],
+    "correct": 1,
+    "explanation": "Python comments begin with #."
+  },
+  {
+    "id": "Q006",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "Which collection stores unique elements?",
+    "options": [
+      "list",
+      "tuple",
+      "set",
+      "string"
+    ],
+    "correct": 2,
+    "explanation": "A set contains distinct hashable elements."
+  },
+  {
+    "id": "Q007",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "What does range(3) produce when iterated?",
+    "options": [
+      "1,2,3",
+      "0,1,2",
+      "0,1,2,3",
+      "3 only"
+    ],
+    "correct": 1,
+    "explanation": "range(3) starts at zero and stops before three."
+  },
+  {
+    "id": "Q008",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "Which method adds one item to a list?",
+    "options": [
+      "push()",
+      "append()",
+      "insertEnd()",
+      "addLast()"
+    ],
+    "correct": 1,
+    "explanation": "list.append adds one element at the end."
+  },
+  {
+    "id": "Q009",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "Which value represents absence of a value in Python?",
+    "options": [
+      "undefined",
+      "NULL",
+      "None",
+      "NaN"
+    ],
+    "correct": 2,
+    "explanation": "None is Python’s null-like singleton."
+  },
+  {
+    "id": "Q010",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "Which operator tests equality?",
+    "options": [
+      "=",
+      "==",
+      "===",
+      "!="
+    ],
+    "correct": 1,
+    "explanation": "== compares values for equality."
+  },
+  {
+    "id": "Q011",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "What does a dictionary get() method do for a missing key by default?",
+    "options": [
+      "Raises KeyError",
+      "Returns None",
+      "Deletes key",
+      "Returns zero"
+    ],
+    "correct": 1,
+    "explanation": "get returns None unless a default is supplied."
+  },
+  {
+    "id": "Q012",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "What is the output of bool([])?",
+    "options": [
+      "True",
+      "False",
+      "None",
+      "Error"
+    ],
+    "correct": 1,
+    "explanation": "An empty list is falsy."
+  },
+  {
+    "id": "Q013",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "Which expression creates a list of squares from 0 to 3?",
+    "options": [
+      "[x*x for x in range(4)]",
+      "{x*x in range(4)}",
+      "(x*x; range(4))",
+      "square(range(4))"
+    ],
+    "correct": 0,
+    "explanation": "This is a list comprehension."
+  },
+  {
+    "id": "Q014",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "What does enumerate(items) provide?",
+    "options": [
+      "Only values",
+      "Index-value pairs",
+      "Sorted values",
+      "Unique values"
+    ],
+    "correct": 1,
+    "explanation": "enumerate yields a counter and corresponding item."
+  },
+  {
+    "id": "Q015",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "Which block runs whether or not an exception occurs?",
+    "options": [
+      "except",
+      "else",
+      "finally",
+      "raise"
+    ],
+    "correct": 2,
+    "explanation": "finally is executed during normal and exceptional exits."
+  },
+  {
+    "id": "Q016",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "What is the output of \"py\" * 3?",
+    "options": [
+      "pypypy",
+      "py3",
+      "py py py",
+      "Error"
+    ],
+    "correct": 0,
+    "explanation": "String multiplication repeats the string."
+  },
+  {
+    "id": "Q017",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "Which keyword is used to handle an exception?",
+    "options": [
+      "catch",
+      "except",
+      "error",
+      "handle"
+    ],
+    "correct": 1,
+    "explanation": "Python uses try/except."
+  },
+  {
+    "id": "Q018",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "What does a *args parameter collect?",
+    "options": [
+      "Keyword arguments in dict",
+      "Extra positional arguments in tuple",
+      "All local variables",
+      "One required argument"
+    ],
+    "correct": 1,
+    "explanation": "args collects extra positional arguments into a tuple."
+  },
+  {
+    "id": "Q019",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "Which statement creates a shallow copy of list a?",
+    "options": [
+      "b=a",
+      "b=a.copy()",
+      "b=copy(a,deep=True)",
+      "b=a.clone()"
+    ],
+    "correct": 1,
+    "explanation": "list.copy creates a shallow copy."
+  },
+  {
+    "id": "Q020",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "What is the result of 10 % 3?",
+    "options": [
+      "0",
+      "1",
+      "3",
+      "3.33"
+    ],
+    "correct": 1,
+    "explanation": "Modulo returns the remainder."
+  },
+  {
+    "id": "Q021",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "What is the key difference between is and ==?",
+    "options": [
+      "No difference",
+      "is checks identity; == checks equality",
+      "is checks type only",
+      "== checks memory address"
+    ],
+    "correct": 1,
+    "explanation": "is compares object identity, while == compares values."
+  },
+  {
+    "id": "Q022",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "What does a generator function use to yield values lazily?",
+    "options": [
+      "return",
+      "yield",
+      "await only",
+      "emit"
+    ],
+    "correct": 1,
+    "explanation": "yield produces values on demand and preserves generator state."
+  },
+  {
+    "id": "Q023",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "What is the output of list(map(lambda x:x+1,[1,2]))?",
+    "options": [
+      "[1,2]",
+      "[2,3]",
+      "[2,3,4]",
+      "Error"
+    ],
+    "correct": 1,
+    "explanation": "map applies the function to each element."
+  },
+  {
+    "id": "Q024",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "Which data type is the usual result of zip(a,b) when fully converted to a list?",
+    "options": [
+      "List of tuples",
+      "Dictionary",
+      "Set",
+      "String"
+    ],
+    "correct": 0,
+    "explanation": "zip yields tuples pairing elements by position."
+  },
+  {
+    "id": "Q025",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "What does nonlocal allow inside a nested function?",
+    "options": [
+      "Modify a variable in the nearest enclosing function scope",
+      "Modify a global only",
+      "Create a class variable",
+      "Delete module"
+    ],
+    "correct": 0,
+    "explanation": "nonlocal binds to an enclosing function variable."
+  },
+  {
+    "id": "Q026",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "What is the average lookup complexity for a dictionary key?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "correct": 2,
+    "explanation": "Hash-table lookup is average constant time."
+  },
+  {
+    "id": "Q027",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "Which method is called when an object is created and initialized?",
+    "options": [
+      "__start__",
+      "__init__",
+      "__newclass__",
+      "constructor"
+    ],
+    "correct": 1,
+    "explanation": "__init__ initializes a newly created instance."
+  },
+  {
+    "id": "Q028",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "What does @staticmethod do?",
+    "options": [
+      "Passes self automatically",
+      "Defines a method without implicit self or cls",
+      "Creates a property",
+      "Makes class abstract"
+    ],
+    "correct": 1,
+    "explanation": "A static method receives no implicit instance or class argument."
+  },
+  {
+    "id": "Q029",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "Which module is commonly used for regular expressions?",
+    "options": [
+      "regex",
+      "re",
+      "pattern",
+      "match"
+    ],
+    "correct": 1,
+    "explanation": "The standard library re module provides regular expressions."
+  },
+  {
+    "id": "Q030",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "What does context manager syntax with open(...) help ensure?",
+    "options": [
+      "Automatic file closing",
+      "Automatic sorting",
+      "Thread creation",
+      "JSON validation"
+    ],
+    "correct": 0,
+    "explanation": "The file is closed when the with block exits."
+  },
+  {
+    "id": "Q031",
+    "category": "HTML/CSS",
+    "difficulty": "Easy",
+    "question": "Which HTML element creates a hyperlink?",
+    "options": [
+      "<link>",
+      "<a>",
+      "<href>",
+      "<url>"
+    ],
+    "correct": 1,
+    "explanation": "The anchor element uses href for a link destination."
+  },
+  {
+    "id": "Q032",
+    "category": "HTML/CSS",
+    "difficulty": "Easy",
+    "question": "Which tag is the largest standard heading?",
+    "options": [
+      "<h6>",
+      "<head>",
+      "<h1>",
+      "<title>"
+    ],
+    "correct": 2,
+    "explanation": "h1 is the highest-level heading."
+  },
+  {
+    "id": "Q033",
+    "category": "HTML/CSS",
+    "difficulty": "Easy",
+    "question": "Which attribute provides alternative text for an image?",
+    "options": [
+      "title",
+      "src",
+      "alt",
+      "label"
+    ],
+    "correct": 2,
+    "explanation": "alt communicates image meaning when it cannot be seen."
+  },
+  {
+    "id": "Q034",
+    "category": "HTML/CSS",
+    "difficulty": "Easy",
+    "question": "Which HTML element creates an unordered list?",
+    "options": [
+      "<ol>",
+      "<ul>",
+      "<li>",
+      "<list>"
+    ],
+    "correct": 1,
+    "explanation": "ul represents an unordered list."
+  },
+  {
+    "id": "Q035",
+    "category": "HTML/CSS",
+    "difficulty": "Easy",
+    "question": "Which CSS property changes text color?",
+    "options": [
+      "font-style",
+      "color",
+      "background",
+      "text-size"
+    ],
+    "correct": 1,
+    "explanation": "color sets the foreground text color."
+  },
+  {
+    "id": "Q036",
+    "category": "HTML/CSS",
+    "difficulty": "Easy",
+    "question": "Which CSS selector targets an element with id=\"menu\"?",
+    "options": [
+      ".menu",
+      "#menu",
+      "menu*",
+      "@menu"
+    ],
+    "correct": 1,
+    "explanation": "The # prefix selects an ID."
+  },
+  {
+    "id": "Q037",
+    "category": "HTML/CSS",
+    "difficulty": "Easy",
+    "question": "Which tag embeds JavaScript in an HTML page?",
+    "options": [
+      "<javascript>",
+      "<script>",
+      "<code>",
+      "<js>"
+    ],
+    "correct": 1,
+    "explanation": "JavaScript code is included with script."
+  },
+  {
+    "id": "Q038",
+    "category": "HTML/CSS",
+    "difficulty": "Medium",
+    "question": "Which semantic element represents the main content of a page?",
+    "options": [
+      "<main>",
+      "<span>",
+      "<b>",
+      "<aside>"
+    ],
+    "correct": 0,
+    "explanation": "main identifies the dominant page content."
+  },
+  {
+    "id": "Q039",
+    "category": "HTML/CSS",
+    "difficulty": "Medium",
+    "question": "Which CSS layout system is one-dimensional by row or column?",
+    "options": [
+      "Grid",
+      "Flexbox",
+      "Float",
+      "Position"
+    ],
+    "correct": 1,
+    "explanation": "Flexbox is designed for one-dimensional layouts."
+  },
+  {
+    "id": "Q040",
+    "category": "HTML/CSS",
+    "difficulty": "Medium",
+    "question": "Which CSS property controls space inside an element border?",
+    "options": [
+      "margin",
+      "padding",
+      "gap",
+      "outline"
+    ],
+    "correct": 1,
+    "explanation": "Padding is the inner spacing between content and border."
+  },
+  {
+    "id": "Q041",
+    "category": "HTML/CSS",
+    "difficulty": "Medium",
+    "question": "Which attribute connects a label to a form input?",
+    "options": [
+      "for matching input id",
+      "src",
+      "action",
+      "target"
+    ],
+    "correct": 0,
+    "explanation": "The label for value should match the input id."
+  },
+  {
+    "id": "Q042",
+    "category": "HTML/CSS",
+    "difficulty": "Medium",
+    "question": "Which input type validates an email-like format in supporting browsers?",
+    "options": [
+      "text",
+      "mail",
+      "email",
+      "address"
+    ],
+    "correct": 2,
+    "explanation": "type=email provides built-in email format validation."
+  },
+  {
+    "id": "Q043",
+    "category": "HTML/CSS",
+    "difficulty": "Medium",
+    "question": "Which CSS unit is relative to the root element font size?",
+    "options": [
+      "em",
+      "rem",
+      "px",
+      "vh"
+    ],
+    "correct": 1,
+    "explanation": "rem is based on the root element font size."
+  },
+  {
+    "id": "Q044",
+    "category": "HTML/CSS",
+    "difficulty": "Medium",
+    "question": "What does box-sizing: border-box do?",
+    "options": [
+      "Excludes padding from width",
+      "Includes padding and border in declared width/height",
+      "Removes border",
+      "Makes width responsive"
+    ],
+    "correct": 1,
+    "explanation": "The declared dimensions include content, padding, and border."
+  },
+  {
+    "id": "Q045",
+    "category": "HTML/CSS",
+    "difficulty": "Medium",
+    "question": "Which HTML attribute makes a form field mandatory?",
+    "options": [
+      "validate",
+      "required",
+      "must",
+      "needed"
+    ],
+    "correct": 1,
+    "explanation": "required prevents submission until the field is filled."
+  },
+  {
+    "id": "Q046",
+    "category": "HTML/CSS",
+    "difficulty": "Hard",
+    "question": "What is the purpose of aria-label?",
+    "options": [
+      "Set CSS class",
+      "Provide an accessible name to an element",
+      "Load an image",
+      "Validate a URL"
+    ],
+    "correct": 1,
+    "explanation": "aria-label supplies an accessible name when visible text is absent."
+  },
+  {
+    "id": "Q047",
+    "category": "HTML/CSS",
+    "difficulty": "Hard",
+    "question": "Which CSS feature defines responsive breakpoints?",
+    "options": [
+      "@media",
+      "@screen",
+      "@responsive",
+      "@viewport"
+    ],
+    "correct": 0,
+    "explanation": "Media queries apply styles based on viewport or device conditions."
+  },
+  {
+    "id": "Q048",
+    "category": "HTML/CSS",
+    "difficulty": "Hard",
+    "question": "What does CSS specificity compare?",
+    "options": [
+      "File size",
+      "Priority of competing selectors",
+      "DOM depth only",
+      "Load speed"
+    ],
+    "correct": 1,
+    "explanation": "Specificity helps determine which matching declaration wins."
+  },
+  {
+    "id": "Q049",
+    "category": "HTML/CSS",
+    "difficulty": "Hard",
+    "question": "Which HTML element is intended for self-contained composition such as a blog post?",
+    "options": [
+      "<section>",
+      "<article>",
+      "<div>",
+      "<footer>"
+    ],
+    "correct": 1,
+    "explanation": "article represents independently distributable content."
+  },
+  {
+    "id": "Q050",
+    "category": "HTML/CSS",
+    "difficulty": "Hard",
+    "question": "Which CSS function can clamp a value between a minimum and maximum?",
+    "options": [
+      "limit()",
+      "clamp()",
+      "bound()",
+      "minmax()"
+    ],
+    "correct": 1,
+    "explanation": "clamp(min, preferred, max) constrains a responsive value."
+  },
+  {
+    "id": "Q051",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "Which data structure follows LIFO?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Tree",
+      "Graph"
+    ],
+    "correct": 1,
+    "explanation": "A stack removes the most recently inserted item first."
+  },
+  {
+    "id": "Q052",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "Which data structure follows FIFO?",
+    "options": [
+      "Stack",
+      "Heap",
+      "Queue",
+      "Trie"
+    ],
+    "correct": 2,
+    "explanation": "A queue removes the earliest inserted item first."
+  },
+  {
+    "id": "Q053",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "What is the time complexity of accessing an array element by index?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "correct": 0,
+    "explanation": "Array indexing uses direct address arithmetic."
+  },
+  {
+    "id": "Q054",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "Which operation adds an item to the top of a stack?",
+    "options": [
+      "Enqueue",
+      "Push",
+      "Dequeue",
+      "Peek"
+    ],
+    "correct": 1,
+    "explanation": "Push inserts an item at the top of a stack."
+  },
+  {
+    "id": "Q055",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "Which operation removes the front item of a queue?",
+    "options": [
+      "Pop",
+      "Push",
+      "Dequeue",
+      "Append"
+    ],
+    "correct": 2,
+    "explanation": "Dequeue removes the front element."
+  },
+  {
+    "id": "Q056",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "Which traversal of a binary search tree returns keys in sorted order?",
+    "options": [
+      "Preorder",
+      "Inorder",
+      "Postorder",
+      "Level order"
+    ],
+    "correct": 1,
+    "explanation": "Inorder visits left subtree, node, then right subtree."
+  },
+  {
+    "id": "Q057",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "What is the worst-case time complexity of linear search?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n²)"
+    ],
+    "correct": 2,
+    "explanation": "It may inspect every element."
+  },
+  {
+    "id": "Q058",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "Which structure is best suited for function-call tracking?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Graph",
+      "Hash set"
+    ],
+    "correct": 0,
+    "explanation": "Function calls and return addresses are managed with a call stack."
+  },
+  {
+    "id": "Q059",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "A linked-list node typically stores…",
+    "options": [
+      "Only an index",
+      "Data and a link",
+      "A sorted array",
+      "A hash function"
+    ],
+    "correct": 1,
+    "explanation": "A node stores its value and pointer/reference to another node."
+  },
+  {
+    "id": "Q060",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "Which structure stores key-value pairs for fast average lookup?",
+    "options": [
+      "Stack",
+      "Hash map",
+      "Queue",
+      "Binary heap"
+    ],
+    "correct": 1,
+    "explanation": "Hash maps use a hash function to locate keys."
+  },
+  {
+    "id": "Q061",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "Which is a valid use of a queue?",
+    "options": [
+      "Undo history",
+      "Breadth-first search",
+      "Recursive calls",
+      "Binary search"
+    ],
+    "correct": 1,
+    "explanation": "BFS explores vertices in first-in-first-out order."
+  },
+  {
+    "id": "Q062",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "What is the root of a tree?",
+    "options": [
+      "A leaf",
+      "The topmost node",
+      "Any node with two children",
+      "The last node"
+    ],
+    "correct": 1,
+    "explanation": "The root is the tree’s distinguished topmost node."
+  },
+  {
+    "id": "Q063",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "A node with no children is called…",
+    "options": [
+      "Root",
+      "Parent",
+      "Leaf",
+      "Sibling"
+    ],
+    "correct": 2,
+    "explanation": "A leaf has degree zero in a rooted tree."
+  },
+  {
+    "id": "Q064",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "Which sorting algorithm repeatedly selects the smallest remaining element?",
+    "options": [
+      "Merge sort",
+      "Selection sort",
+      "Quick sort",
+      "Heap sort"
+    ],
+    "correct": 1,
+    "explanation": "Selection sort selects the minimum from the unsorted suffix."
+  },
+  {
+    "id": "Q065",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "Which algorithm uses divide and conquer and merges sorted halves?",
+    "options": [
+      "Bubble sort",
+      "Merge sort",
+      "Selection sort",
+      "Counting sort"
+    ],
+    "correct": 1,
+    "explanation": "Merge sort recursively sorts halves and merges them."
+  },
+  {
+    "id": "Q066",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "What is the average time complexity of binary search on a sorted array?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(n log n)",
+      "O(1)"
+    ],
+    "correct": 1,
+    "explanation": "Each comparison halves the remaining search interval."
+  },
+  {
+    "id": "Q067",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "Which condition is required for binary search?",
+    "options": [
+      "Array must be sorted",
+      "Array must contain unique values",
+      "Array must be linked",
+      "Array length must be even"
+    ],
+    "correct": 0,
+    "explanation": "Binary search relies on sorted order to discard half the range."
+  },
+  {
+    "id": "Q068",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "Which graph traversal commonly uses a queue?",
+    "options": [
+      "DFS",
+      "BFS",
+      "Inorder",
+      "Postorder"
+    ],
+    "correct": 1,
+    "explanation": "Breadth-first search uses a queue."
+  },
+  {
+    "id": "Q069",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "Which graph traversal commonly uses a stack or recursion?",
+    "options": [
+      "BFS",
+      "DFS",
+      "Counting sort",
+      "Binary search"
+    ],
+    "correct": 1,
+    "explanation": "Depth-first search follows a path before backtracking."
+  },
+  {
+    "id": "Q070",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "What does a hash collision mean?",
+    "options": [
+      "Two keys map to same slot",
+      "A key is deleted",
+      "The table is sorted",
+      "A value is null"
+    ],
+    "correct": 0,
+    "explanation": "Different keys can produce the same hash-table index."
+  },
+  {
+    "id": "Q071",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "Which structure is commonly used to implement recursion?",
+    "options": [
+      "Queue",
+      "Call stack",
+      "Hash table",
+      "Adjacency matrix"
+    ],
+    "correct": 1,
+    "explanation": "Each recursive call adds a stack frame."
+  },
+  {
+    "id": "Q072",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "In a min-heap, the root contains…",
+    "options": [
+      "The largest key",
+      "The smallest key",
+      "A random key",
+      "The median key"
+    ],
+    "correct": 1,
+    "explanation": "A min-heap maintains parent values no greater than children."
+  },
+  {
+    "id": "Q073",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "Which representation stores graph edges in a 2D table?",
+    "options": [
+      "Adjacency matrix",
+      "Stack frame",
+      "Trie",
+      "Linked queue"
+    ],
+    "correct": 0,
+    "explanation": "An adjacency matrix records edge presence or weight by vertex pair."
+  },
+  {
+    "id": "Q074",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "Which operation is typically O(1) for a singly linked list when the head is known?",
+    "options": [
+      "Access the 100th item",
+      "Insert at head",
+      "Search by value",
+      "Sort all nodes"
+    ],
+    "correct": 1,
+    "explanation": "Head insertion changes a constant number of pointers."
+  },
+  {
+    "id": "Q075",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "What is the space complexity of storing n elements in an array?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n²)"
+    ],
+    "correct": 2,
+    "explanation": "The array allocates storage proportional to its element count."
+  },
+  {
+    "id": "Q076",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is the worst-case time complexity of quicksort?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(n log n)",
+      "O(n²)"
+    ],
+    "correct": 3,
+    "explanation": "Highly unbalanced partitions can produce quadratic work."
+  },
+  {
+    "id": "Q077",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is the typical average time complexity of quicksort?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(n log n)",
+      "O(n²)"
+    ],
+    "correct": 2,
+    "explanation": "Balanced partitions lead to O(n log n) expected time."
+  },
+  {
+    "id": "Q078",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of inserting into a binary heap?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "correct": 1,
+    "explanation": "The new element may bubble up one heap level at a time."
+  },
+  {
+    "id": "Q079",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of extracting the minimum from a binary min-heap?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "correct": 1,
+    "explanation": "Removing the root and restoring heap order takes logarithmic time."
+  },
+  {
+    "id": "Q080",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Which algorithm finds shortest paths from one source when all edge weights are non-negative?",
+    "options": [
+      "DFS",
+      "Dijkstra",
+      "Kruskal",
+      "Topological sort"
+    ],
+    "correct": 1,
+    "explanation": "Dijkstra’s greedy strategy is valid for non-negative edge weights."
+  },
+  {
+    "id": "Q081",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Which algorithm builds a minimum spanning tree by adding the lightest safe edge?",
+    "options": [
+      "KMP",
+      "Kruskal",
+      "Binary search",
+      "Floyd-Warshall"
+    ],
+    "correct": 1,
+    "explanation": "Kruskal sorts edges and uses disjoint sets to avoid cycles."
+  },
+  {
+    "id": "Q082",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Which data structure efficiently supports union and find operations?",
+    "options": [
+      "Disjoint-set union",
+      "Stack",
+      "Trie",
+      "Deque"
+    ],
+    "correct": 0,
+    "explanation": "DSU maintains connected components with union/find."
+  },
+  {
+    "id": "Q083",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of merging two sorted arrays of total length n?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n²)"
+    ],
+    "correct": 2,
+    "explanation": "Each element is processed once during the merge."
+  },
+  {
+    "id": "Q084",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Which sorting algorithm is stable in its standard implementation?",
+    "options": [
+      "Heap sort",
+      "Merge sort",
+      "Selection sort",
+      "Quick sort"
+    ],
+    "correct": 1,
+    "explanation": "A stable merge can preserve the order of equal keys."
+  },
+  {
+    "id": "Q085",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is the worst-case search time in an unbalanced BST with n nodes?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "correct": 2,
+    "explanation": "A skewed BST behaves like a linked list."
+  },
+  {
+    "id": "Q086",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is the height of a perfectly balanced binary tree with n nodes, asymptotically?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n²)"
+    ],
+    "correct": 1,
+    "explanation": "Each level roughly doubles the number of nodes."
+  },
+  {
+    "id": "Q087",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Which data structure is commonly used for autocomplete prefix search?",
+    "options": [
+      "Trie",
+      "Stack",
+      "Heap",
+      "Disjoint set"
+    ],
+    "correct": 0,
+    "explanation": "A trie shares prefixes along paths."
+  },
+  {
+    "id": "Q088",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Which technique solves problems by storing results of overlapping subproblems?",
+    "options": [
+      "Greedy only",
+      "Dynamic programming",
+      "Linear probing",
+      "Backtracking only"
+    ],
+    "correct": 1,
+    "explanation": "Dynamic programming reuses previously computed subproblem results."
+  },
+  {
+    "id": "Q089",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Which approach explores all candidate solutions and abandons invalid partial choices?",
+    "options": [
+      "Backtracking",
+      "Hashing",
+      "Heapify",
+      "Binary search"
+    ],
+    "correct": 0,
+    "explanation": "Backtracking prunes a search when a partial solution cannot work."
+  },
+  {
+    "id": "Q090",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of BFS using an adjacency list?",
+    "options": [
+      "O(V)",
+      "O(E)",
+      "O(V + E)",
+      "O(V × E)"
+    ],
+    "correct": 2,
+    "explanation": "Each vertex and each edge is processed a constant number of times."
+  },
+  {
+    "id": "Q091",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "In a directed acyclic graph, what ordering places every source before its outgoing neighbors?",
+    "options": [
+      "Inorder",
+      "Topological order",
+      "Heap order",
+      "Lexicographic hash"
+    ],
+    "correct": 1,
+    "explanation": "A topological ordering respects every directed edge."
+  },
+  {
+    "id": "Q092",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Which collision strategy stores multiple entries in a bucket at each table index?",
+    "options": [
+      "Separate chaining",
+      "Binary lifting",
+      "Heapify",
+      "Path compression"
+    ],
+    "correct": 0,
+    "explanation": "Separate chaining keeps colliding keys in a bucket structure."
+  },
+  {
+    "id": "Q093",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is the load factor of a hash table?",
+    "options": [
+      "Buckets divided by keys",
+      "Keys divided by table capacity",
+      "Capacity squared",
+      "Number of collisions only"
+    ],
+    "correct": 1,
+    "explanation": "Load factor is the number of stored entries divided by capacity."
+  },
+  {
+    "id": "Q094",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Which structure supports insertion and deletion at both ends?",
+    "options": [
+      "Deque",
+      "Stack only",
+      "Binary tree",
+      "Trie"
+    ],
+    "correct": 0,
+    "explanation": "A double-ended queue supports operations at front and rear."
+  },
+  {
+    "id": "Q095",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is the amortized time complexity of append in a dynamic array?",
+    "options": [
+      "O(n) always",
+      "O(log n)",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "correct": 2,
+    "explanation": "Occasional resizing is spread across many constant-time appends."
+  },
+  {
+    "id": "Q096",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Which algorithm detects a cycle in a directed graph using recursion states?",
+    "options": [
+      "DFS coloring",
+      "Bubble sort",
+      "Kruskal",
+      "Counting sort"
+    ],
+    "correct": 0,
+    "explanation": "A back edge to a currently active DFS node indicates a cycle."
+  },
+  {
+    "id": "Q097",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Which two pointers technique can find a pair in a sorted array in O(n)?",
+    "options": [
+      "Slow/fast only",
+      "Left and right pointers",
+      "Two stacks",
+      "Two queues"
+    ],
+    "correct": 1,
+    "explanation": "Move the left or right pointer according to the current sum."
+  },
+  {
+    "id": "Q098",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of building a binary heap from n items using bottom-up heapify?",
+    "options": [
+      "O(n)",
+      "O(n log n)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "correct": 0,
+    "explanation": "Most nodes are near the leaves and require little sifting."
+  },
+  {
+    "id": "Q099",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Which algorithm computes all-pairs shortest paths using dynamic programming?",
+    "options": [
+      "Dijkstra",
+      "Floyd-Warshall",
+      "Kruskal",
+      "Prim"
+    ],
+    "correct": 1,
+    "explanation": "Floyd-Warshall considers each vertex as an intermediate point."
+  },
+  {
+    "id": "Q100",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is the purpose of a sentinel node in a linked list?",
+    "options": [
+      "To sort nodes",
+      "To simplify boundary handling",
+      "To hash values",
+      "To balance a tree"
+    ],
+    "correct": 1,
+    "explanation": "A dummy node can reduce special cases at list boundaries."
+  },
+  {
+    "id": "Q101",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Which traversal visits a tree level by level?",
+    "options": [
+      "Preorder",
+      "Inorder",
+      "Level order",
+      "Postorder"
+    ],
+    "correct": 2,
+    "explanation": "Level-order traversal uses a queue to process each depth."
+  },
+  {
+    "id": "Q102",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Which data structure is commonly used in an LRU cache?",
+    "options": [
+      "Queue + stack",
+      "Hash map + doubly linked list",
+      "Heap + trie",
+      "Graph + array"
+    ],
+    "correct": 1,
+    "explanation": "The map gives fast lookup and the list maintains recency order."
+  },
+  {
+    "id": "Q103",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is the worst-case time complexity of searching in a hash table?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "correct": 2,
+    "explanation": "All keys may collide into one bucket."
+  },
+  {
+    "id": "Q104",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Which algorithm is suitable for finding a minimum spanning tree in a connected weighted graph?",
+    "options": [
+      "Prim",
+      "KMP",
+      "Boyer-Moore",
+      "Bellman-Ford"
+    ],
+    "correct": 0,
+    "explanation": "Prim grows a tree by repeatedly choosing a light crossing edge."
+  },
+  {
+    "id": "Q105",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What does path compression optimize in DSU?",
+    "options": [
+      "Queue ordering",
+      "Find operation",
+      "Heap insertion",
+      "Tree traversal"
+    ],
+    "correct": 1,
+    "explanation": "It makes visited nodes point closer to the representative."
+  },
+  {
+    "id": "Q106",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Which technique is useful for detecting a cycle in a singly linked list with O(1) extra space?",
+    "options": [
+      "Merge sort",
+      "Floyd slow-fast pointers",
+      "Binary search",
+      "BFS"
+    ],
+    "correct": 1,
+    "explanation": "The fast pointer eventually meets the slow pointer if a cycle exists."
+  },
+  {
+    "id": "Q107",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "What is the time complexity of KMP pattern matching for text length n and pattern length m?",
+    "options": [
+      "O(nm)",
+      "O(n + m)",
+      "O(n log m)",
+      "O(m²)"
+    ],
+    "correct": 1,
+    "explanation": "The prefix table prevents rechecking matched text characters."
+  },
+  {
+    "id": "Q108",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "Which shortest-path algorithm supports negative edges but no reachable negative cycle?",
+    "options": [
+      "Dijkstra",
+      "Bellman-Ford",
+      "Prim",
+      "Kruskal"
+    ],
+    "correct": 1,
+    "explanation": "Bellman-Ford relaxes all edges repeatedly and detects negative cycles."
+  },
+  {
+    "id": "Q109",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "What is the time complexity of a standard Fenwick tree point update and prefix sum?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "correct": 1,
+    "explanation": "The index moves by its least significant set bit."
+  },
+  {
+    "id": "Q110",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "Which data structure supports range minimum queries with point updates in O(log n)?",
+    "options": [
+      "Stack",
+      "Segment tree",
+      "Queue",
+      "Trie"
+    ],
+    "correct": 1,
+    "explanation": "A segment tree updates and queries logarithmically many nodes."
+  },
+  {
+    "id": "Q111",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "What is the key property of a monotonic stack?",
+    "options": [
+      "Items are always random",
+      "Items remain in sorted/monotone order",
+      "It is FIFO",
+      "It stores only duplicates"
+    ],
+    "correct": 1,
+    "explanation": "Maintaining monotonic order helps resolve next-greater/smaller queries."
+  },
+  {
+    "id": "Q112",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "What is the time complexity of finding the median of two sorted arrays in the optimal algorithm?",
+    "options": [
+      "O(n + m)",
+      "O(log(min(n,m)))",
+      "O(nm)",
+      "O(log(nm))"
+    ],
+    "correct": 1,
+    "explanation": "Binary search partitions the shorter array."
+  },
+  {
+    "id": "Q113",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "Which algorithm finds strongly connected components in a directed graph using two DFS passes?",
+    "options": [
+      "Kosaraju",
+      "Prim",
+      "Dijkstra",
+      "Kruskal"
+    ],
+    "correct": 0,
+    "explanation": "Kosaraju runs DFS on the graph and its transpose in finishing order."
+  },
+  {
+    "id": "Q114",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "What is the maximum number of edges in a simple undirected graph with V vertices?",
+    "options": [
+      "V²",
+      "V(V−1)/2",
+      "V−1",
+      "2V"
+    ],
+    "correct": 1,
+    "explanation": "Every unordered pair of distinct vertices can contribute one edge."
+  },
+  {
+    "id": "Q115",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "Which technique can optimize DP when the transition has a convex-hull structure?",
+    "options": [
+      "Convex hull trick",
+      "Linear probing",
+      "Heap sort",
+      "Two queues"
+    ],
+    "correct": 0,
+    "explanation": "The convex hull trick maintains candidate linear functions efficiently."
+  },
+  {
+    "id": "Q116",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "What is the time complexity of a suffix array construction using a common O(n log n) doubling method?",
+    "options": [
+      "O(n)",
+      "O(n log n)",
+      "O(n log² n)",
+      "O(n²)"
+    ],
+    "correct": 2,
+    "explanation": "Each of O(log n) rounds sorts n suffix-rank pairs."
+  },
+  {
+    "id": "Q117",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "Which algorithm finds articulation points in an undirected graph in O(V+E)?",
+    "options": [
+      "Tarjan DFS low-link method",
+      "Dijkstra",
+      "Floyd-Warshall",
+      "KMP"
+    ],
+    "correct": 0,
+    "explanation": "Discovery times and low-link values identify separating vertices."
+  },
+  {
+    "id": "Q118",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "What is the key condition for applying Dijkstra correctly?",
+    "options": [
+      "All edges are distinct",
+      "All edge weights are non-negative",
+      "Graph is a tree",
+      "Graph is undirected"
+    ],
+    "correct": 1,
+    "explanation": "Negative edges can invalidate the greedy finalization step."
+  },
+  {
+    "id": "Q119",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "In a lazy segment tree, what does a lazy tag represent?",
+    "options": [
+      "A pending range update",
+      "A deleted leaf",
+      "A hash collision",
+      "A graph edge"
+    ],
+    "correct": 0,
+    "explanation": "The tag records an update to propagate to children only when needed."
+  },
+  {
+    "id": "Q120",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "Which data structure is useful for answering offline range queries sorted by block order?",
+    "options": [
+      "Mo’s algorithm with frequency state",
+      "Binary heap only",
+      "Trie",
+      "Call stack"
+    ],
+    "correct": 0,
+    "explanation": "Mo’s algorithm reorders queries to minimize pointer movement."
+  },
+  {
+    "id": "Q121",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "What is the amortized complexity of a sequence of push and pop operations on a stack?",
+    "options": [
+      "O(n²)",
+      "O(n log n)",
+      "O(n) total",
+      "O(1) total for all operations"
+    ],
+    "correct": 2,
+    "explanation": "Each item is pushed and popped at most once, so the sequence is linear."
+  },
+  {
+    "id": "Q122",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "Which algorithm finds a maximum flow in a network using augmenting paths and BFS?",
+    "options": [
+      "Edmonds-Karp",
+      "Prim",
+      "KMP",
+      "A*"
+    ],
+    "correct": 0,
+    "explanation": "Edmonds-Karp uses BFS to find shortest augmenting paths."
+  },
+  {
+    "id": "Q123",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "What is the time complexity of Edmonds-Karp in terms of V and E?",
+    "options": [
+      "O(VE)",
+      "O(VE²)",
+      "O(V²E)",
+      "O(E log V)"
+    ],
+    "correct": 1,
+    "explanation": "The BFS-based augmenting path bound is O(VE²)."
+  },
+  {
+    "id": "Q124",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "Which property does a red-black tree guarantee?",
+    "options": [
+      "Every path has equal length",
+      "Height is O(log n)",
+      "All leaves store keys",
+      "It is always complete"
+    ],
+    "correct": 1,
+    "explanation": "Color constraints bound the height logarithmically."
+  },
+  {
+    "id": "Q125",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "What is the main advantage of a B-tree in database indexing?",
+    "options": [
+      "Minimizes disk I/O with high branching factor",
+      "Constant-time sorting",
+      "No balancing required",
+      "Stores only binary values"
+    ],
+    "correct": 0,
+    "explanation": "High fan-out reduces tree height and disk accesses."
+  },
+  {
+    "id": "Q126",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "Which algorithm can find a negative cycle reachable from a source?",
+    "options": [
+      "Bellman-Ford extra relaxation pass",
+      "Prim",
+      "Binary search",
+      "Kruskal"
+    ],
+    "correct": 0,
+    "explanation": "A further successful relaxation after V−1 rounds signals a reachable negative cycle."
+  },
+  {
+    "id": "Q127",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "What is the time complexity of A* with a consistent heuristic in typical graph-search analysis?",
+    "options": [
+      "Always O(1)",
+      "Depends on explored states; no single polynomial bound",
+      "Always O(V+E)",
+      "Always O(log V)"
+    ],
+    "correct": 1,
+    "explanation": "Its work depends on the heuristic and number of explored states."
+  },
+  {
+    "id": "Q128",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "Which technique reduces repeated subproblem work in recursive algorithms?",
+    "options": [
+      "Memoization",
+      "Linear probing",
+      "Heap deletion",
+      "Adjacency matrix"
+    ],
+    "correct": 0,
+    "explanation": "Memoization caches results keyed by subproblem state."
+  },
+  {
+    "id": "Q129",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "What does a topological sort imply about a graph?",
+    "options": [
+      "It is a DAG",
+      "It is complete",
+      "It is undirected",
+      "It is weighted"
+    ],
+    "correct": 0,
+    "explanation": "A topological order exists exactly for directed acyclic graphs."
+  },
+  {
+    "id": "Q130",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "Which structure supports efficient prefix XOR queries with point updates?",
+    "options": [
+      "Fenwick tree",
+      "Stack",
+      "Binary heap",
+      "Queue"
+    ],
+    "correct": 0,
+    "explanation": "A Fenwick tree can maintain prefix XOR using the same index structure."
+  },
+  {
+    "id": "Q131",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "For an AVL tree, what is the allowed balance-factor range at every node?",
+    "options": [
+      "Only 0",
+      "−1, 0, or 1",
+      "−2 to 2",
+      "Any integer"
+    ],
+    "correct": 1,
+    "explanation": "AVL nodes keep subtree heights differing by at most one."
+  },
+  {
+    "id": "Q132",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "Which algorithm is commonly used to compute bridges in an undirected graph?",
+    "options": [
+      "DFS low-link values",
+      "Dijkstra",
+      "Kruskal",
+      "Counting sort"
+    ],
+    "correct": 0,
+    "explanation": "An edge is a bridge when its child subtree cannot reach an ancestor."
+  },
+  {
+    "id": "Q133",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "What is the time complexity of radix sort for n keys with d digits and base k?",
+    "options": [
+      "O(n log n)",
+      "O(d(n+k))",
+      "O(n²)",
+      "O(k log d)"
+    ],
+    "correct": 1,
+    "explanation": "Each digit pass uses a stable counting-style sort."
+  },
+  {
+    "id": "Q134",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "Which approach is used by the classic 0/1 knapsack DP?",
+    "options": [
+      "Sort by ratio greedily",
+      "State by item index and capacity",
+      "BFS over graph edges",
+      "Binary search only"
+    ],
+    "correct": 1,
+    "explanation": "Each item is either excluded or included once in the capacity state."
+  },
+  {
+    "id": "Q135",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "What is the time complexity of the standard 0/1 knapsack DP with n items and capacity W?",
+    "options": [
+      "O(nW)",
+      "O(n log W)",
+      "O(W²)",
+      "O(2ⁿ)"
+    ],
+    "correct": 0,
+    "explanation": "The table considers each item across all capacities."
+  },
+  {
+    "id": "Q136",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "Which data structure can answer kth-smallest queries in a dynamic set using order statistics?",
+    "options": [
+      "Balanced BST augmented with subtree sizes",
+      "Simple queue",
+      "Stack",
+      "Adjacency list"
+    ],
+    "correct": 0,
+    "explanation": "Subtree sizes guide selection by rank."
+  },
+  {
+    "id": "Q137",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "What is the purpose of a Bloom filter?",
+    "options": [
+      "Exact key-value storage",
+      "Probabilistic set membership with possible false positives",
+      "Sorting strings",
+      "Finding shortest paths"
+    ],
+    "correct": 1,
+    "explanation": "Bloom filters may say “possibly present” for absent items but avoid false negatives when used correctly."
+  },
+  {
+    "id": "Q138",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "Which string algorithm uses Z-values to find pattern occurrences in linear time?",
+    "options": [
+      "Z algorithm",
+      "Prim",
+      "Dijkstra",
+      "Floyd-Warshall"
+    ],
+    "correct": 0,
+    "explanation": "The Z array stores longest matches with the prefix at each position."
+  },
+  {
+    "id": "Q139",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "What is the time complexity of building a suffix automaton for a string of length n?",
+    "options": [
+      "O(n)",
+      "O(n log n)",
+      "O(n²)",
+      "O(2ⁿ)"
+    ],
+    "correct": 0,
+    "explanation": "A suffix automaton can be built in linear time."
+  },
+  {
+    "id": "Q140",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "Which graph algorithm computes transitive closure using a triple nested loop?",
+    "options": [
+      "Warshall algorithm",
+      "Kruskal",
+      "KMP",
+      "Prim"
+    ],
+    "correct": 0,
+    "explanation": "Warshall updates reachability through each possible intermediate vertex."
+  },
+  {
+    "id": "Q141",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "What is the main purpose of heavy-light decomposition?",
+    "options": [
+      "Speed up tree path queries by splitting paths",
+      "Compress strings",
+      "Sort edges",
+      "Detect hash collisions"
+    ],
+    "correct": 0,
+    "explanation": "It decomposes tree paths into logarithmically many heavy segments."
+  },
+  {
+    "id": "Q142",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "Which technique is often used to answer offline connectivity queries with edge additions and rollback?",
+    "options": [
+      "DSU rollback",
+      "Dijkstra",
+      "Trie",
+      "Stack sorting"
+    ],
+    "correct": 0,
+    "explanation": "Rollback DSU restores earlier component state between query branches."
+  },
+  {
+    "id": "Q143",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "What does the potential method analyze in amortized analysis?",
+    "options": [
+      "A stored potential function over data-structure states",
+      "Only worst input values",
+      "CPU clock speed",
+      "Memory addresses"
+    ],
+    "correct": 0,
+    "explanation": "Potential changes account for cheap and expensive operations across a sequence."
+  },
+  {
+    "id": "Q144",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "How many children can a binary-tree node have at most?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "Unlimited"
+    ],
+    "correct": 1,
+    "explanation": "A binary tree node has at most two children."
+  },
+  {
+    "id": "Q145",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "Which notation describes an asymptotic upper bound?",
+    "options": [
+      "Omega",
+      "Theta",
+      "Big-O",
+      "Little-omega"
+    ],
+    "correct": 2,
+    "explanation": "Big-O gives an asymptotic upper bound."
+  },
+  {
+    "id": "Q146",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "Which notation describes a tight asymptotic bound?",
+    "options": [
+      "Big-O",
+      "Big-Omega",
+      "Big-Theta",
+      "Little-o"
+    ],
+    "correct": 2,
+    "explanation": "Theta bounds growth both above and below."
+  },
+  {
+    "id": "Q147",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "Which sorting algorithm repeatedly swaps adjacent out-of-order elements?",
+    "options": [
+      "Bubble sort",
+      "Merge sort",
+      "Heap sort",
+      "Radix sort"
+    ],
+    "correct": 0,
+    "explanation": "Bubble sort compares and swaps adjacent elements."
+  },
+  {
+    "id": "Q148",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "Which structure is ideal for checking balanced parentheses?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Graph",
+      "Heap"
+    ],
+    "correct": 0,
+    "explanation": "Opening brackets are pushed and matched with closing brackets."
+  },
+  {
+    "id": "Q149",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is the worst-case time complexity of insertion sort?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(n²)",
+      "O(n log n)"
+    ],
+    "correct": 2,
+    "explanation": "Reverse-sorted input causes many shifts."
+  },
+  {
+    "id": "Q150",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Which traversal of a binary tree visits the node before its subtrees?",
+    "options": [
+      "Inorder",
+      "Preorder",
+      "Postorder",
+      "Level order"
+    ],
+    "correct": 1,
+    "explanation": "Preorder visits root, left, then right."
+  }
+]

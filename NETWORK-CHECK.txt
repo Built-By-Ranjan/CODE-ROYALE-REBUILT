@@ -1,0 +1,15 @@
+QUICK NETWORK CHECK
+
+On the HOST laptop:
+1) Start the server: npm start
+2) Open http://localhost:3000/health
+   Expected: {"ok":true,...}
+3) Run ipconfig and find the IPv4 address of the Windows Mobile Hotspot adapter.
+
+On EACH PLAYER laptop:
+1) Connect to the host laptop's Mobile Hotspot.
+2) Open http://HOST-IP:3000/health
+3) If it says {"ok":true,...}, open /player/1 or /player/2.
+4) If browser times out, run in PowerShell:
+   Test-NetConnection HOST-IP -Port 3000
+   TcpTestSucceeded=True means the port is reachable.
