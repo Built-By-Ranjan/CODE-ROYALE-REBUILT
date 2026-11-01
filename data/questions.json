@@ -3,161 +3,178 @@
     "id": "Q001",
     "category": "Python",
     "difficulty": "Easy",
-    "question": "Which Python type is immutable?",
+    "type": "mcq",
+    "question": "Which of the following data types is immutable in Python?",
     "options": [
-      "list",
-      "dict",
-      "tuple",
-      "set"
+      "List",
+      "Dictionary",
+      "Tuple",
+      "Set"
     ],
     "correct": 2,
-    "explanation": "Tuples cannot be changed after creation."
+    "explanation": "Tuples cannot be changed once created."
   },
   {
     "id": "Q002",
     "category": "Python",
     "difficulty": "Easy",
-    "question": "What does len([4, 8, 9]) return?",
+    "type": "mcq",
+    "question": "What is the output of len([\"apple\", \"banana\", \"cherry\"])?",
     "options": [
       "2",
       "3",
       "4",
-      "8"
+      "18"
     ],
     "correct": 1,
-    "explanation": "There are three elements."
+    "explanation": "The list contains exactly 3 elements."
   },
   {
     "id": "Q003",
     "category": "Python",
     "difficulty": "Easy",
-    "question": "Which keyword defines a function?",
+    "type": "mcq",
+    "question": "Which keyword is used to define a function in Python?",
     "options": [
       "func",
-      "define",
+      "function",
       "def",
-      "lambda"
+      "define"
     ],
     "correct": 2,
-    "explanation": "Python uses def to define a named function."
+    "explanation": "def defines functions in Python."
   },
   {
     "id": "Q004",
     "category": "Python",
     "difficulty": "Easy",
-    "question": "What is the result of 7 // 2?",
+    "type": "mcq",
+    "question": "What is the result of 7 // 2 in Python?",
     "options": [
       "3.5",
       "3",
       "4",
-      "2"
+      "1"
     ],
     "correct": 1,
-    "explanation": "Floor division returns the quotient rounded down."
+    "explanation": "// performs floor integer division, returning 3."
   },
   {
     "id": "Q005",
     "category": "Python",
     "difficulty": "Easy",
-    "question": "Which symbol starts a single-line comment?",
+    "type": "mcq",
+    "question": "Which symbol is used for single-line comments in Python?",
     "options": [
       "//",
-      "#",
       "/*",
-      "--"
+      "#",
+      "<!--"
     ],
-    "correct": 1,
-    "explanation": "Python comments begin with #."
+    "correct": 2,
+    "explanation": "# marks the start of a single-line comment."
   },
   {
     "id": "Q006",
     "category": "Python",
     "difficulty": "Easy",
-    "question": "Which collection stores unique elements?",
+    "type": "error",
+    "question": "Find the error in this Python function definition:",
+    "code": "Line 1: def greet(name)\nLine 2:     print(\"Hello \" + name)",
     "options": [
-      "list",
-      "tuple",
-      "set",
-      "string"
+      "Line 1: Missing colon \":\" at the end of def",
+      "Line 2: print cannot concatenate strings",
+      "Line 1: Function name cannot be greet",
+      "Line 2: Missing semicolon at the end"
     ],
-    "correct": 2,
-    "explanation": "A set contains distinct hashable elements."
+    "correct": 0,
+    "explanation": "Function headers in Python must end with a colon (:)."
   },
   {
     "id": "Q007",
     "category": "Python",
     "difficulty": "Easy",
-    "question": "What does range(3) produce when iterated?",
+    "type": "error",
+    "question": "Find the error in this conditional statement:",
+    "code": "Line 1: score = 85\nLine 2: if score = 100:\nLine 3:     print(\"Perfect\")",
     "options": [
-      "1,2,3",
-      "0,1,2",
-      "0,1,2,3",
-      "3 only"
+      "Line 1: Variables must be declared with var",
+      "Line 2: Single \"=\" is assignment; must use \"==\" for comparison",
+      "Line 3: print must use single quotes",
+      "Line 2: Parentheses are mandatory in if statements"
     ],
     "correct": 1,
-    "explanation": "range(3) starts at zero and stops before three."
+    "explanation": "The equality comparison operator is ==, whereas = is for variable assignment."
   },
   {
     "id": "Q008",
     "category": "Python",
     "difficulty": "Easy",
-    "question": "Which method adds one item to a list?",
+    "type": "error",
+    "question": "Find the error when attempting to modify a tuple:",
+    "code": "Line 1: coordinates = (10, 20)\nLine 2: coordinates[0] = 50\nLine 3: print(coordinates)",
     "options": [
-      "push()",
-      "append()",
-      "insertEnd()",
-      "addLast()"
+      "Line 1: Tuples must have at least 3 elements",
+      "Line 2: Tuples are immutable and item assignment is not allowed",
+      "Line 3: print cannot output tuples",
+      "Line 2: Index out of range"
     ],
     "correct": 1,
-    "explanation": "list.append adds one element at the end."
+    "explanation": "Tuples are immutable; trying to modify coordinates[0] raises a TypeError."
   },
   {
     "id": "Q009",
     "category": "Python",
     "difficulty": "Easy",
-    "question": "Which value represents absence of a value in Python?",
+    "type": "error",
+    "question": "Find the error in this string quotation:",
+    "code": "Line 1: message = 'Hello World\"\nLine 2: print(message)",
     "options": [
-      "undefined",
-      "NULL",
-      "None",
-      "NaN"
+      "Line 1: Mismatched quotes (starts with single, ends with double)",
+      "Line 2: Missing parentheses around message",
+      "Line 1: Strings cannot have spaces",
+      "Line 2: message is a reserved keyword"
     ],
-    "correct": 2,
-    "explanation": "None is Python’s null-like singleton."
+    "correct": 0,
+    "explanation": "String literals must start and end with the matching quote type."
   },
   {
     "id": "Q010",
     "category": "Python",
     "difficulty": "Easy",
-    "question": "Which operator tests equality?",
+    "type": "error",
+    "question": "Find the error in this list append attempt:",
+    "code": "Line 1: fruits = [\"apple\", \"banana\"]\nLine 2: fruits.append(\"orange\", \"mango\")",
     "options": [
-      "=",
-      "==",
-      "===",
-      "!="
+      "Line 1: Lists cannot contain strings",
+      "Line 2: append() takes exactly one argument, not two",
+      "Line 2: append must be called with a plus sign",
+      "Line 1: Semicolon missing at the end of list"
     ],
     "correct": 1,
-    "explanation": "== compares values for equality."
+    "explanation": "append() takes exactly one argument. To add multiple items, use extend() or a loop."
   },
   {
     "id": "Q011",
     "category": "Python",
     "difficulty": "Medium",
-    "question": "What does a dictionary get() method do for a missing key by default?",
+    "type": "mcq",
+    "question": "What does dict.get(\"key\", \"default\") return if \"key\" is missing?",
     "options": [
-      "Raises KeyError",
-      "Returns None",
-      "Deletes key",
-      "Returns zero"
+      "KeyError exception",
+      "None",
+      "\"default\"",
+      "False"
     ],
-    "correct": 1,
-    "explanation": "get returns None unless a default is supplied."
+    "correct": 2,
+    "explanation": "get() returns the provided default value if the key does not exist."
   },
   {
     "id": "Q012",
     "category": "Python",
     "difficulty": "Medium",
-    "question": "What is the output of bool([])?",
+    "type": "mcq",
+    "question": "What is the boolean value of bool([]) in Python?",
     "options": [
       "True",
       "False",
@@ -165,265 +182,294 @@
       "Error"
     ],
     "correct": 1,
-    "explanation": "An empty list is falsy."
+    "explanation": "An empty collection evaluates to False."
   },
   {
     "id": "Q013",
     "category": "Python",
     "difficulty": "Medium",
-    "question": "Which expression creates a list of squares from 0 to 3?",
+    "type": "mcq",
+    "question": "What is the output of \"py\" * 3 in Python?",
     "options": [
-      "[x*x for x in range(4)]",
-      "{x*x in range(4)}",
-      "(x*x; range(4))",
-      "square(range(4))"
+      "pypypy",
+      "py3",
+      "Error",
+      "[\"py\", \"py\", \"py\"]"
     ],
     "correct": 0,
-    "explanation": "This is a list comprehension."
+    "explanation": "Multiplying a string by an integer repeats it."
   },
   {
     "id": "Q014",
     "category": "Python",
     "difficulty": "Medium",
-    "question": "What does enumerate(items) provide?",
+    "type": "mcq",
+    "question": "What does enumerate([\"a\", \"b\"]) provide during iteration?",
     "options": [
-      "Only values",
-      "Index-value pairs",
-      "Sorted values",
-      "Unique values"
+      "Values only",
+      "Pairs of (index, value)",
+      "Keys only",
+      "Total count"
     ],
     "correct": 1,
-    "explanation": "enumerate yields a counter and corresponding item."
+    "explanation": "enumerate() yields tuples of (index, value)."
   },
   {
     "id": "Q015",
     "category": "Python",
     "difficulty": "Medium",
-    "question": "Which block runs whether or not an exception occurs?",
+    "type": "mcq",
+    "question": "Which block in a try-except structure ALWAYS executes?",
     "options": [
-      "except",
-      "else",
+      "try",
+      "catch",
       "finally",
-      "raise"
+      "else"
     ],
     "correct": 2,
-    "explanation": "finally is executed during normal and exceptional exits."
+    "explanation": "The finally block executes whether an exception occurred or not."
   },
   {
     "id": "Q016",
     "category": "Python",
     "difficulty": "Medium",
-    "question": "What is the output of \"py\" * 3?",
+    "type": "error",
+    "question": "Find the error in this type conversion operation:",
+    "code": "Line 1: age = 20\nLine 2: print(\"Your age is: \" + age)",
     "options": [
-      "pypypy",
-      "py3",
-      "py py py",
-      "Error"
+      "Line 1: Age must be enclosed in quotes",
+      "Line 2: Cannot concatenate string with int (need str(age))",
+      "Line 2: print cannot have string arguments",
+      "Line 1: Integer cannot be 20"
     ],
-    "correct": 0,
-    "explanation": "String multiplication repeats the string."
+    "correct": 1,
+    "explanation": "Python does not implicitly convert integers to strings during string concatenation with +."
   },
   {
     "id": "Q017",
     "category": "Python",
     "difficulty": "Medium",
-    "question": "Which keyword is used to handle an exception?",
+    "type": "error",
+    "question": "Find the error in this dictionary key access:",
+    "code": "Line 1: student = {\"name\": \"Alice\", \"grade\": \"A\"}\nLine 2: print(student[\"age\"])",
     "options": [
-      "catch",
-      "except",
-      "error",
-      "handle"
+      "Line 1: Dictionary keys must be integers",
+      "Line 2: Accessing non-existent key \"age\" raises KeyError",
+      "Line 2: Must use student.age with dot notation",
+      "Line 1: Values cannot be strings"
     ],
     "correct": 1,
-    "explanation": "Python uses try/except."
+    "explanation": "Direct indexing with a missing key raises a KeyError. Use student.get(\"age\") to handle missing keys safely."
   },
   {
     "id": "Q018",
     "category": "Python",
     "difficulty": "Medium",
-    "question": "What does a *args parameter collect?",
+    "type": "error",
+    "question": "Find the error in this while loop:",
+    "code": "Line 1: count = 0\nLine 2: while count < 3:\nLine 3:     print(count)\nLine 4:     count =+ 1",
     "options": [
-      "Keyword arguments in dict",
-      "Extra positional arguments in tuple",
-      "All local variables",
-      "One required argument"
+      "Line 2: while condition must be enclosed in parentheses",
+      "Line 4: Typo \"=+\" instead of \"+=\" sets count to 1 causing an infinite loop",
+      "Line 3: Indentation is not allowed in while loops",
+      "Line 1: Variable name count is forbidden"
     ],
     "correct": 1,
-    "explanation": "args collects extra positional arguments into a tuple."
+    "explanation": "= +1 assigns positive 1 to count on every iteration, leading to an infinite loop. It should be count += 1."
   },
   {
     "id": "Q019",
     "category": "Python",
     "difficulty": "Medium",
-    "question": "Which statement creates a shallow copy of list a?",
+    "type": "error",
+    "question": "Find the error in this list index access:",
+    "code": "Line 1: nums = [10, 20, 30]\nLine 2: print(nums[3])",
     "options": [
-      "b=a",
-      "b=a.copy()",
-      "b=copy(a,deep=True)",
-      "b=a.clone()"
+      "Line 1: Lists cannot have brackets",
+      "Line 2: Index 3 is out of range (valid indices are 0, 1, 2)",
+      "Line 2: Must use round brackets nums(3)",
+      "Line 1: Semicolon required after each number"
     ],
     "correct": 1,
-    "explanation": "list.copy creates a shallow copy."
+    "explanation": "A 3-element list has indices 0, 1, and 2. Index 3 causes an IndexError."
   },
   {
     "id": "Q020",
     "category": "Python",
     "difficulty": "Medium",
-    "question": "What is the result of 10 % 3?",
+    "type": "error",
+    "question": "Find the error in this function call:",
+    "code": "Line 1: def add(a, b):\nLine 2:     return a + b\nLine 3: result = add(5)",
     "options": [
-      "0",
-      "1",
-      "3",
-      "3.33"
+      "Line 1: Parameters cannot be single letters",
+      "Line 3: Missing required positional argument \"b\"",
+      "Line 2: return is not supported in Python functions",
+      "Line 3: result cannot store function return values"
     ],
     "correct": 1,
-    "explanation": "Modulo returns the remainder."
+    "explanation": "add() expects two arguments (a and b), but only one was passed, raising a TypeError."
   },
   {
     "id": "Q021",
     "category": "Python",
     "difficulty": "Hard",
-    "question": "What is the key difference between is and ==?",
+    "type": "mcq",
+    "question": "What is the difference between \"==\" and \"is\" in Python?",
     "options": [
-      "No difference",
-      "is checks identity; == checks equality",
-      "is checks type only",
-      "== checks memory address"
+      "No difference at all",
+      "== checks value equality; is checks memory identity",
+      "is checks values; == checks memory",
+      "is only works for numbers"
     ],
     "correct": 1,
-    "explanation": "is compares object identity, while == compares values."
+    "explanation": "== compares values, while is checks if both point to the exact same object in memory."
   },
   {
     "id": "Q022",
     "category": "Python",
     "difficulty": "Hard",
-    "question": "What does a generator function use to yield values lazily?",
+    "type": "mcq",
+    "question": "Which keyword turns a regular function into a generator?",
     "options": [
       "return",
       "yield",
-      "await only",
-      "emit"
+      "async",
+      "generate"
     ],
     "correct": 1,
-    "explanation": "yield produces values on demand and preserves generator state."
+    "explanation": "yield produces values lazily one at a time."
   },
   {
     "id": "Q023",
     "category": "Python",
     "difficulty": "Hard",
-    "question": "What is the output of list(map(lambda x:x+1,[1,2]))?",
+    "type": "mcq",
+    "question": "How do you reverse a string s in Python using slicing?",
     "options": [
-      "[1,2]",
-      "[2,3]",
-      "[2,3,4]",
-      "Error"
+      "s[::1]",
+      "s[::-1]",
+      "s[-1::]",
+      "s.reverse()"
     ],
     "correct": 1,
-    "explanation": "map applies the function to each element."
+    "explanation": "s[::-1] steps backwards through the string from end to start."
   },
   {
     "id": "Q024",
     "category": "Python",
     "difficulty": "Hard",
-    "question": "Which data type is the usual result of zip(a,b) when fully converted to a list?",
+    "type": "mcq",
+    "question": "What does the with statement (context manager) ensure for file operations?",
     "options": [
-      "List of tuples",
-      "Dictionary",
-      "Set",
-      "String"
+      "It speeds up reading",
+      "It automatically closes the file after the block",
+      "It encrypts file data",
+      "It creates a backup copy"
     ],
-    "correct": 0,
-    "explanation": "zip yields tuples pairing elements by position."
+    "correct": 1,
+    "explanation": "with open(...) guarantees the file will be closed even if an exception occurs."
   },
   {
     "id": "Q025",
     "category": "Python",
     "difficulty": "Hard",
-    "question": "What does nonlocal allow inside a nested function?",
+    "type": "mcq",
+    "question": "Which special method is the constructor for initializing a class instance in Python?",
     "options": [
-      "Modify a variable in the nearest enclosing function scope",
-      "Modify a global only",
-      "Create a class variable",
-      "Delete module"
+      "__new__",
+      "__init__",
+      "__start__",
+      "__create__"
     ],
-    "correct": 0,
-    "explanation": "nonlocal binds to an enclosing function variable."
+    "correct": 1,
+    "explanation": "__init__ is the initializer method called when an object is instantiated."
   },
   {
     "id": "Q026",
     "category": "Python",
     "difficulty": "Hard",
-    "question": "What is the average lookup complexity for a dictionary key?",
+    "type": "error",
+    "question": "Find the subtle error in this default argument definition:",
+    "code": "Line 1: def append_to(item, target_list=[]):\nLine 2:     target_list.append(item)\nLine 3:     return target_list",
     "options": [
-      "O(n)",
-      "O(log n)",
-      "O(1)",
-      "O(n log n)"
+      "Line 1: Default argument [] is mutable and shared across all calls",
+      "Line 2: append cannot modify arguments",
+      "Line 3: target_list cannot be returned",
+      "Line 1: Function cannot accept two parameters"
     ],
-    "correct": 2,
-    "explanation": "Hash-table lookup is average constant time."
+    "correct": 0,
+    "explanation": "Using a mutable default value (like []) shares that list across all invocations. Use target_list=None instead."
   },
   {
     "id": "Q027",
     "category": "Python",
     "difficulty": "Hard",
-    "question": "Which method is called when an object is created and initialized?",
+    "type": "error",
+    "question": "Find the error in this class method definition:",
+    "code": "Line 1: class Player:\nLine 2:     def __init__(self, name):\nLine 3:         self.name = name\nLine 4:     def get_name():\nLine 5:         return self.name",
     "options": [
-      "__start__",
-      "__init__",
-      "__newclass__",
-      "constructor"
+      "Line 1: class keyword must be capitalized",
+      "Line 4: Instance method get_name is missing \"self\" as its first parameter",
+      "Line 3: self.name cannot be assigned in __init__",
+      "Line 5: return is not allowed in class methods"
     ],
     "correct": 1,
-    "explanation": "__init__ initializes a newly created instance."
+    "explanation": "Instance methods must take self as their first parameter to access instance attributes."
   },
   {
     "id": "Q028",
     "category": "Python",
     "difficulty": "Hard",
-    "question": "What does @staticmethod do?",
+    "type": "error",
+    "question": "Find the error in this list comprehension:",
+    "code": "Line 1: nums = [1, 2, 3, 4]\nLine 2: evens = [x for x in nums if x % 2 == 0 else 0]",
     "options": [
-      "Passes self automatically",
-      "Defines a method without implicit self or cls",
-      "Creates a property",
-      "Makes class abstract"
+      "Line 1: List must be sorted",
+      "Line 2: Filter if condition goes at the end without an else clause",
+      "Line 2: x % 2 must be enclosed in double quotes",
+      "Line 1: Brackets [] are not allowed in list comprehensions"
     ],
     "correct": 1,
-    "explanation": "A static method receives no implicit instance or class argument."
+    "explanation": "In list comprehensions, a filter condition at the end cannot have an else clause. For if-else transformation, it must precede the for loop."
   },
   {
     "id": "Q029",
     "category": "Python",
     "difficulty": "Hard",
-    "question": "Which module is commonly used for regular expressions?",
+    "type": "error",
+    "question": "Find the error in this variable scope attempt:",
+    "code": "Line 1: total = 0\nLine 2: def add(x):\nLine 3:     total += x\nLine 4: add(5)",
     "options": [
-      "regex",
-      "re",
-      "pattern",
-      "match"
+      "Line 1: Global variable must be uppercase",
+      "Line 3: Modifying global total without \"global total\" declaration raises UnboundLocalError",
+      "Line 4: Function cannot be called with an integer",
+      "Line 2: Functions cannot take parameters"
     ],
     "correct": 1,
-    "explanation": "The standard library re module provides regular expressions."
+    "explanation": "Reassigning a global variable inside a function without declaring global total causes an UnboundLocalError."
   },
   {
     "id": "Q030",
     "category": "Python",
     "difficulty": "Hard",
-    "question": "What does context manager syntax with open(...) help ensure?",
+    "type": "error",
+    "question": "Find the error in this set creation:",
+    "code": "Line 1: unique_items = {[1, 2], [3, 4]}\nLine 2: print(len(unique_items))",
     "options": [
-      "Automatic file closing",
-      "Automatic sorting",
-      "Thread creation",
-      "JSON validation"
+      "Line 1: Lists are mutable and unhashable, so they cannot be set elements",
+      "Line 2: len() cannot be used on sets",
+      "Line 1: Sets cannot use curly braces",
+      "Line 2: print statement missing quotes"
     ],
     "correct": 0,
-    "explanation": "The file is closed when the with block exits."
+    "explanation": "Set elements must be hashable and immutable. Lists cannot be stored in sets (tuples can)."
   },
   {
     "id": "Q031",
     "category": "HTML/CSS",
     "difficulty": "Easy",
-    "question": "Which HTML element creates a hyperlink?",
+    "type": "mcq",
+    "question": "Which HTML tag creates a clickable hyperlink?",
     "options": [
       "<link>",
       "<a>",
@@ -431,1581 +477,488 @@
       "<url>"
     ],
     "correct": 1,
-    "explanation": "The anchor element uses href for a link destination."
+    "explanation": "<a> creates hyperlinks using the href attribute."
   },
   {
     "id": "Q032",
     "category": "HTML/CSS",
     "difficulty": "Easy",
-    "question": "Which tag is the largest standard heading?",
+    "type": "mcq",
+    "question": "Which HTML tag represents the highest priority, largest heading?",
     "options": [
       "<h6>",
       "<head>",
       "<h1>",
-      "<title>"
+      "<header>"
     ],
     "correct": 2,
-    "explanation": "h1 is the highest-level heading."
+    "explanation": "<h1> is the top-level standard heading in HTML."
   },
   {
     "id": "Q033",
     "category": "HTML/CSS",
     "difficulty": "Easy",
-    "question": "Which attribute provides alternative text for an image?",
+    "type": "mcq",
+    "question": "Which CSS selector symbol selects an element by its ID?",
     "options": [
-      "title",
-      "src",
-      "alt",
-      "label"
+      ". (dot)",
+      "# (hash)",
+      "@ (at)",
+      ": (colon)"
     ],
-    "correct": 2,
-    "explanation": "alt communicates image meaning when it cannot be seen."
+    "correct": 1,
+    "explanation": "# selects elements by ID, while . selects by class."
   },
   {
     "id": "Q034",
     "category": "HTML/CSS",
     "difficulty": "Easy",
-    "question": "Which HTML element creates an unordered list?",
+    "type": "mcq",
+    "question": "Which HTML element is used to create an unordered (bulleted) list?",
     "options": [
       "<ol>",
       "<ul>",
-      "<li>",
-      "<list>"
+      "<list>",
+      "<li>"
     ],
     "correct": 1,
-    "explanation": "ul represents an unordered list."
+    "explanation": "<ul> creates an unordered bulleted list."
   },
   {
     "id": "Q035",
     "category": "HTML/CSS",
     "difficulty": "Easy",
-    "question": "Which CSS property changes text color?",
+    "type": "error",
+    "question": "Find the error in this image tag:",
+    "code": "<img href=\"avatar.png\" alt=\"User Profile\">",
     "options": [
-      "font-style",
-      "color",
-      "background",
-      "text-size"
+      "<img> uses \"src\" attribute for image source, not \"href\"",
+      "alt attribute is forbidden on images",
+      "<img> must have a closing </img> tag",
+      "File extension .png is invalid in HTML"
     ],
-    "correct": 1,
-    "explanation": "color sets the foreground text color."
+    "correct": 0,
+    "explanation": "Image paths are specified with src=\"path\", while href is used for links (<a href=\"...\">)."
   },
   {
     "id": "Q036",
     "category": "HTML/CSS",
     "difficulty": "Easy",
-    "question": "Which CSS selector targets an element with id=\"menu\"?",
+    "type": "error",
+    "question": "Find the error in this CSS rule:",
+    "code": "p {\n  text-color: blue;\n}",
     "options": [
-      ".menu",
-      "#menu",
-      "menu*",
-      "@menu"
+      "Selector p must be enclosed in quotes",
+      "The CSS property for text color is \"color\", not \"text-color\"",
+      "Curly braces are not used in CSS",
+      "blue is not a valid CSS color"
     ],
     "correct": 1,
-    "explanation": "The # prefix selects an ID."
+    "explanation": "In CSS, the property to change text color is simply color: blue;."
   },
   {
     "id": "Q037",
     "category": "HTML/CSS",
     "difficulty": "Easy",
-    "question": "Which tag embeds JavaScript in an HTML page?",
+    "type": "error",
+    "question": "Find the error in this hyperlink element:",
+    "code": "<a link=\"https://google.com\">Search</a>",
     "options": [
-      "<javascript>",
-      "<script>",
-      "<code>",
-      "<js>"
+      "The link attribute should be \"href\"",
+      "<a> tag must be uppercase <A>",
+      "Search text cannot be inside <a>",
+      "URL cannot start with https"
     ],
-    "correct": 1,
-    "explanation": "JavaScript code is included with script."
+    "correct": 0,
+    "explanation": "The destination URL for an anchor tag is specified using the href attribute."
   },
   {
     "id": "Q038",
     "category": "HTML/CSS",
     "difficulty": "Medium",
-    "question": "Which semantic element represents the main content of a page?",
+    "type": "mcq",
+    "question": "Which CSS property controls the space INSIDE an element, between content and border?",
     "options": [
-      "<main>",
-      "<span>",
-      "<b>",
-      "<aside>"
+      "margin",
+      "padding",
+      "spacing",
+      "border-spacing"
     ],
-    "correct": 0,
-    "explanation": "main identifies the dominant page content."
+    "correct": 1,
+    "explanation": "padding is internal space; margin is external space outside the border."
   },
   {
     "id": "Q039",
     "category": "HTML/CSS",
     "difficulty": "Medium",
-    "question": "Which CSS layout system is one-dimensional by row or column?",
+    "type": "mcq",
+    "question": "Which CSS display value enables Flexbox layout?",
     "options": [
-      "Grid",
-      "Flexbox",
-      "Float",
-      "Position"
+      "inline",
+      "block",
+      "flex",
+      "table"
     ],
-    "correct": 1,
-    "explanation": "Flexbox is designed for one-dimensional layouts."
+    "correct": 2,
+    "explanation": "display: flex turns a container into a flexible box."
   },
   {
     "id": "Q040",
     "category": "HTML/CSS",
     "difficulty": "Medium",
-    "question": "Which CSS property controls space inside an element border?",
+    "type": "mcq",
+    "question": "What does \"box-sizing: border-box\" do in CSS?",
     "options": [
-      "margin",
-      "padding",
-      "gap",
-      "outline"
+      "Removes the border completely",
+      "Includes padding and border in the element total width and height",
+      "Doubles the margin",
+      "Forces text inside a border"
     ],
     "correct": 1,
-    "explanation": "Padding is the inner spacing between content and border."
+    "explanation": "border-box makes width and height include content, padding, and border."
   },
   {
     "id": "Q041",
     "category": "HTML/CSS",
     "difficulty": "Medium",
-    "question": "Which attribute connects a label to a form input?",
+    "type": "mcq",
+    "question": "Which HTML attribute marks a form input field as mandatory before submission?",
     "options": [
-      "for matching input id",
-      "src",
-      "action",
-      "target"
+      "validate",
+      "required",
+      "mandatory",
+      "need"
     ],
-    "correct": 0,
-    "explanation": "The label for value should match the input id."
+    "correct": 1,
+    "explanation": "The required attribute prevents submission if the field is empty."
   },
   {
     "id": "Q042",
     "category": "HTML/CSS",
     "difficulty": "Medium",
-    "question": "Which input type validates an email-like format in supporting browsers?",
+    "type": "error",
+    "question": "Find the error in this CSS class selector:",
+    "code": "#header-title {\n  font-size: 24px;\n}\n\n<!-- HTML: -->\n<h1 class=\"header-title\">Welcome</h1>",
     "options": [
-      "text",
-      "mail",
-      "email",
-      "address"
+      "# selects by ID in CSS; for class=\"header-title\", use .header-title",
+      "font-size cannot use px units",
+      "h1 elements cannot have classes",
+      "Welcome must be inside a <p> tag"
     ],
-    "correct": 2,
-    "explanation": "type=email provides built-in email format validation."
+    "correct": 0,
+    "explanation": "The CSS rule used # (ID selector) instead of . (class selector) to match class=\"header-title\"."
   },
   {
     "id": "Q043",
     "category": "HTML/CSS",
     "difficulty": "Medium",
-    "question": "Which CSS unit is relative to the root element font size?",
+    "type": "error",
+    "question": "Find the error in this HTML form setup:",
+    "code": "<form action=\"/submit\">\n  <label for=\"username\">User:</label>\n  <input type=\"text\" name=\"user\">\n</form>",
     "options": [
-      "em",
-      "rem",
-      "px",
-      "vh"
+      "action cannot start with slash",
+      "The input is missing id=\"username\" to match the label for attribute",
+      "form must have method=\"delete\"",
+      "type=\"text\" is invalid"
     ],
     "correct": 1,
-    "explanation": "rem is based on the root element font size."
+    "explanation": "<label for=\"x\"> binds to an input by its id=\"x\", not its name attribute."
   },
   {
     "id": "Q044",
     "category": "HTML/CSS",
     "difficulty": "Medium",
-    "question": "What does box-sizing: border-box do?",
+    "type": "error",
+    "question": "Find the error in this CSS flexbox alignment:",
+    "code": ".container {\n  display: flex;\n  align-items: middle;\n}",
     "options": [
-      "Excludes padding from width",
-      "Includes padding and border in declared width/height",
-      "Removes border",
-      "Makes width responsive"
+      "display cannot be flex",
+      "In Flexbox, the value is \"center\", not \"middle\"",
+      "align-items is only for tables",
+      "Curly braces must be square brackets"
     ],
     "correct": 1,
-    "explanation": "The declared dimensions include content, padding, and border."
+    "explanation": "In Flexbox, centering items uses align-items: center;, while middle is used in vertical-align."
   },
   {
     "id": "Q045",
     "category": "HTML/CSS",
     "difficulty": "Medium",
-    "question": "Which HTML attribute makes a form field mandatory?",
+    "type": "error",
+    "question": "Find the error in this external stylesheet link:",
+    "code": "<link href=\"style.css\" type=\"style\">",
     "options": [
-      "validate",
-      "required",
-      "must",
-      "needed"
+      "Missing rel=\"stylesheet\" attribute",
+      "href cannot point to .css files",
+      "Must be written as <stylesheet>",
+      "<link> must be placed inside <body>"
     ],
-    "correct": 1,
-    "explanation": "required prevents submission until the field is filled."
+    "correct": 0,
+    "explanation": "Browsers require rel=\"stylesheet\" to recognize and apply linked CSS files."
   },
   {
     "id": "Q046",
     "category": "HTML/CSS",
     "difficulty": "Hard",
-    "question": "What is the purpose of aria-label?",
+    "type": "mcq",
+    "question": "Which CSS rule defines responsive styles based on screen width?",
     "options": [
-      "Set CSS class",
-      "Provide an accessible name to an element",
-      "Load an image",
-      "Validate a URL"
+      "@responsive",
+      "@media",
+      "@screen",
+      "@breakpoint"
     ],
     "correct": 1,
-    "explanation": "aria-label supplies an accessible name when visible text is absent."
+    "explanation": "@media queries conditionally apply styles based on viewport size."
   },
   {
     "id": "Q047",
     "category": "HTML/CSS",
     "difficulty": "Hard",
-    "question": "Which CSS feature defines responsive breakpoints?",
+    "type": "mcq",
+    "question": "Which CSS position value keeps an element fixed relative to the viewport on scroll?",
     "options": [
-      "@media",
-      "@screen",
-      "@responsive",
-      "@viewport"
+      "static",
+      "relative",
+      "absolute",
+      "fixed"
     ],
-    "correct": 0,
-    "explanation": "Media queries apply styles based on viewport or device conditions."
+    "correct": 3,
+    "explanation": "position: fixed fixes elements relative to the browser viewport."
   },
   {
     "id": "Q048",
     "category": "HTML/CSS",
     "difficulty": "Hard",
-    "question": "What does CSS specificity compare?",
+    "type": "mcq",
+    "question": "Which CSS pseudo-class styles a button when the user hovers over it with a mouse?",
     "options": [
-      "File size",
-      "Priority of competing selectors",
-      "DOM depth only",
-      "Load speed"
+      ":focus",
+      ":active",
+      ":hover",
+      ":visited"
     ],
-    "correct": 1,
-    "explanation": "Specificity helps determine which matching declaration wins."
+    "correct": 2,
+    "explanation": ":hover matches when the cursor hovers over an element."
   },
   {
     "id": "Q049",
     "category": "HTML/CSS",
     "difficulty": "Hard",
-    "question": "Which HTML element is intended for self-contained composition such as a blog post?",
+    "type": "error",
+    "question": "Find the error in this CSS media query syntax:",
+    "code": "@media (screen and max-width: 768px) {\n  .sidebar { display: none; }\n}",
     "options": [
-      "<section>",
-      "<article>",
-      "<div>",
-      "<footer>"
+      "Syntax error: \"screen and (max-width: 768px)\" requires media type outside parentheses",
+      "max-width cannot be used in media queries",
+      "display: none is not permitted inside media queries",
+      "@media must be uppercase"
     ],
-    "correct": 1,
-    "explanation": "article represents independently distributable content."
+    "correct": 0,
+    "explanation": "The media type and expression must be written as @media screen and (max-width: 768px)."
   },
   {
     "id": "Q050",
     "category": "HTML/CSS",
     "difficulty": "Hard",
-    "question": "Which CSS function can clamp a value between a minimum and maximum?",
+    "type": "error",
+    "question": "Find the error in this CSS z-index attempt:",
+    "code": ".popup {\n  position: static;\n  z-index: 9999;\n}",
     "options": [
-      "limit()",
-      "clamp()",
-      "bound()",
-      "minmax()"
+      "z-index has no effect on position: static elements",
+      "z-index cannot exceed 100",
+      "position cannot be static",
+      "Class popup cannot use numbers"
     ],
-    "correct": 1,
-    "explanation": "clamp(min, preferred, max) constrains a responsive value."
+    "correct": 0,
+    "explanation": "z-index only applies to positioned elements (relative, absolute, fixed, or sticky), not static."
   },
   {
     "id": "Q051",
     "category": "DSA",
     "difficulty": "Easy",
-    "question": "Which data structure follows LIFO?",
+    "type": "mcq",
+    "question": "Which principle does a Stack follow?",
     "options": [
-      "Queue",
-      "Stack",
-      "Tree",
-      "Graph"
+      "FIFO (First In First Out)",
+      "LIFO (Last In First Out)",
+      "Priority Order",
+      "Random Order"
     ],
     "correct": 1,
-    "explanation": "A stack removes the most recently inserted item first."
+    "explanation": "A Stack follows LIFO: the last item pushed is the first popped."
   },
   {
     "id": "Q052",
     "category": "DSA",
     "difficulty": "Easy",
-    "question": "Which data structure follows FIFO?",
+    "type": "mcq",
+    "question": "Which principle does a standard Queue follow?",
     "options": [
-      "Stack",
-      "Heap",
-      "Queue",
-      "Trie"
+      "LIFO (Last In First Out)",
+      "FIFO (First In First Out)",
+      "Sorted Order",
+      "Hashed Order"
     ],
-    "correct": 2,
-    "explanation": "A queue removes the earliest inserted item first."
+    "correct": 1,
+    "explanation": "A Queue follows FIFO: the first element inserted is the first removed."
   },
   {
     "id": "Q053",
     "category": "DSA",
     "difficulty": "Easy",
-    "question": "What is the time complexity of accessing an array element by index?",
+    "type": "mcq",
+    "question": "What is the time complexity to access an array element using its index?",
     "options": [
       "O(1)",
-      "O(log n)",
       "O(n)",
-      "O(n log n)"
+      "O(log n)",
+      "O(n²)"
     ],
     "correct": 0,
-    "explanation": "Array indexing uses direct address arithmetic."
+    "explanation": "Array access by index takes constant O(1) time."
   },
   {
     "id": "Q054",
     "category": "DSA",
     "difficulty": "Easy",
-    "question": "Which operation adds an item to the top of a stack?",
+    "type": "mcq",
+    "question": "Which searching algorithm checks each item sequentially from start to end?",
     "options": [
-      "Enqueue",
-      "Push",
-      "Dequeue",
-      "Peek"
+      "Binary Search",
+      "Linear Search",
+      "Jump Search",
+      "Interpolation Search"
     ],
     "correct": 1,
-    "explanation": "Push inserts an item at the top of a stack."
+    "explanation": "Linear search scans each element sequentially."
   },
   {
     "id": "Q055",
     "category": "DSA",
     "difficulty": "Easy",
-    "question": "Which operation removes the front item of a queue?",
+    "type": "mcq",
+    "question": "What prerequisite is REQUIRED before using Binary Search on an array?",
     "options": [
-      "Pop",
-      "Push",
-      "Dequeue",
-      "Append"
+      "Must contain only positive numbers",
+      "The array must be sorted",
+      "The size must be even",
+      "No duplicates allowed"
     ],
-    "correct": 2,
-    "explanation": "Dequeue removes the front element."
+    "correct": 1,
+    "explanation": "Binary Search strictly requires the elements to be sorted."
   },
   {
     "id": "Q056",
     "category": "DSA",
     "difficulty": "Easy",
-    "question": "Which traversal of a binary search tree returns keys in sorted order?",
+    "type": "mcq",
+    "question": "What is the worst-case time complexity of Binary Search?",
     "options": [
-      "Preorder",
-      "Inorder",
-      "Postorder",
-      "Level order"
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
     ],
     "correct": 1,
-    "explanation": "Inorder visits left subtree, node, then right subtree."
+    "explanation": "Binary Search halves the search space each step, running in O(log n)."
   },
   {
     "id": "Q057",
     "category": "DSA",
     "difficulty": "Easy",
-    "question": "What is the worst-case time complexity of linear search?",
+    "type": "mcq",
+    "question": "In a singly linked list, what does each node store besides data?",
     "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n²)"
+      "Pointer to previous node",
+      "Pointer to next node",
+      "Array index",
+      "Total list size"
     ],
-    "correct": 2,
-    "explanation": "It may inspect every element."
+    "correct": 1,
+    "explanation": "Each node stores data and a pointer to the next node."
   },
   {
     "id": "Q058",
     "category": "DSA",
     "difficulty": "Easy",
-    "question": "Which structure is best suited for function-call tracking?",
+    "type": "mcq",
+    "question": "What does the next pointer of the LAST node in a singly linked list store?",
     "options": [
-      "Stack",
-      "Queue",
-      "Graph",
-      "Hash set"
+      "Head address",
+      "NULL (or None)",
+      "Its own address",
+      "0 always"
     ],
-    "correct": 0,
-    "explanation": "Function calls and return addresses are managed with a call stack."
+    "correct": 1,
+    "explanation": "The terminal node points to NULL, indicating the end of the list."
   },
   {
     "id": "Q059",
     "category": "DSA",
     "difficulty": "Easy",
-    "question": "A linked-list node typically stores…",
+    "type": "mcq",
+    "question": "Which operation inserts an element onto the top of a stack?",
     "options": [
-      "Only an index",
-      "Data and a link",
-      "A sorted array",
-      "A hash function"
+      "Pop",
+      "Push",
+      "Peek",
+      "Enqueue"
     ],
     "correct": 1,
-    "explanation": "A node stores its value and pointer/reference to another node."
+    "explanation": "Push adds an element to the top of the stack."
   },
   {
     "id": "Q060",
     "category": "DSA",
     "difficulty": "Easy",
-    "question": "Which structure stores key-value pairs for fast average lookup?",
+    "type": "mcq",
+    "question": "Which operation removes the top element from a stack?",
     "options": [
-      "Stack",
-      "Hash map",
-      "Queue",
-      "Binary heap"
+      "Push",
+      "Pop",
+      "Peek",
+      "Dequeue"
     ],
     "correct": 1,
-    "explanation": "Hash maps use a hash function to locate keys."
+    "explanation": "Pop removes the top element from the stack."
   },
   {
     "id": "Q061",
     "category": "DSA",
     "difficulty": "Easy",
-    "question": "Which is a valid use of a queue?",
+    "type": "mcq",
+    "question": "What error occurs when you try to pop from an empty stack?",
     "options": [
-      "Undo history",
-      "Breadth-first search",
-      "Recursive calls",
-      "Binary search"
+      "Stack Overflow",
+      "Stack Underflow",
+      "Segmentation Fault",
+      "Memory Leak"
     ],
     "correct": 1,
-    "explanation": "BFS explores vertices in first-in-first-out order."
+    "explanation": "Popping an empty stack causes Stack Underflow."
   },
   {
     "id": "Q062",
     "category": "DSA",
     "difficulty": "Easy",
-    "question": "What is the root of a tree?",
+    "type": "mcq",
+    "question": "What error occurs when you try to push into a full fixed-size stack?",
     "options": [
-      "A leaf",
-      "The topmost node",
-      "Any node with two children",
-      "The last node"
+      "Stack Underflow",
+      "Stack Overflow",
+      "Garbage Collection",
+      "Infinite Loop"
     ],
     "correct": 1,
-    "explanation": "The root is the tree’s distinguished topmost node."
+    "explanation": "Pushing into a full stack causes Stack Overflow."
   },
   {
     "id": "Q063",
     "category": "DSA",
     "difficulty": "Easy",
-    "question": "A node with no children is called…",
-    "options": [
-      "Root",
-      "Parent",
-      "Leaf",
-      "Sibling"
-    ],
-    "correct": 2,
-    "explanation": "A leaf has degree zero in a rooted tree."
-  },
-  {
-    "id": "Q064",
-    "category": "DSA",
-    "difficulty": "Easy",
-    "question": "Which sorting algorithm repeatedly selects the smallest remaining element?",
-    "options": [
-      "Merge sort",
-      "Selection sort",
-      "Quick sort",
-      "Heap sort"
-    ],
-    "correct": 1,
-    "explanation": "Selection sort selects the minimum from the unsorted suffix."
-  },
-  {
-    "id": "Q065",
-    "category": "DSA",
-    "difficulty": "Easy",
-    "question": "Which algorithm uses divide and conquer and merges sorted halves?",
-    "options": [
-      "Bubble sort",
-      "Merge sort",
-      "Selection sort",
-      "Counting sort"
-    ],
-    "correct": 1,
-    "explanation": "Merge sort recursively sorts halves and merges them."
-  },
-  {
-    "id": "Q066",
-    "category": "DSA",
-    "difficulty": "Easy",
-    "question": "What is the average time complexity of binary search on a sorted array?",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "correct": 1,
-    "explanation": "Each comparison halves the remaining search interval."
-  },
-  {
-    "id": "Q067",
-    "category": "DSA",
-    "difficulty": "Easy",
-    "question": "Which condition is required for binary search?",
-    "options": [
-      "Array must be sorted",
-      "Array must contain unique values",
-      "Array must be linked",
-      "Array length must be even"
-    ],
-    "correct": 0,
-    "explanation": "Binary search relies on sorted order to discard half the range."
-  },
-  {
-    "id": "Q068",
-    "category": "DSA",
-    "difficulty": "Easy",
-    "question": "Which graph traversal commonly uses a queue?",
-    "options": [
-      "DFS",
-      "BFS",
-      "Inorder",
-      "Postorder"
-    ],
-    "correct": 1,
-    "explanation": "Breadth-first search uses a queue."
-  },
-  {
-    "id": "Q069",
-    "category": "DSA",
-    "difficulty": "Easy",
-    "question": "Which graph traversal commonly uses a stack or recursion?",
-    "options": [
-      "BFS",
-      "DFS",
-      "Counting sort",
-      "Binary search"
-    ],
-    "correct": 1,
-    "explanation": "Depth-first search follows a path before backtracking."
-  },
-  {
-    "id": "Q070",
-    "category": "DSA",
-    "difficulty": "Easy",
-    "question": "What does a hash collision mean?",
-    "options": [
-      "Two keys map to same slot",
-      "A key is deleted",
-      "The table is sorted",
-      "A value is null"
-    ],
-    "correct": 0,
-    "explanation": "Different keys can produce the same hash-table index."
-  },
-  {
-    "id": "Q071",
-    "category": "DSA",
-    "difficulty": "Easy",
-    "question": "Which structure is commonly used to implement recursion?",
-    "options": [
-      "Queue",
-      "Call stack",
-      "Hash table",
-      "Adjacency matrix"
-    ],
-    "correct": 1,
-    "explanation": "Each recursive call adds a stack frame."
-  },
-  {
-    "id": "Q072",
-    "category": "DSA",
-    "difficulty": "Easy",
-    "question": "In a min-heap, the root contains…",
-    "options": [
-      "The largest key",
-      "The smallest key",
-      "A random key",
-      "The median key"
-    ],
-    "correct": 1,
-    "explanation": "A min-heap maintains parent values no greater than children."
-  },
-  {
-    "id": "Q073",
-    "category": "DSA",
-    "difficulty": "Easy",
-    "question": "Which representation stores graph edges in a 2D table?",
-    "options": [
-      "Adjacency matrix",
-      "Stack frame",
-      "Trie",
-      "Linked queue"
-    ],
-    "correct": 0,
-    "explanation": "An adjacency matrix records edge presence or weight by vertex pair."
-  },
-  {
-    "id": "Q074",
-    "category": "DSA",
-    "difficulty": "Easy",
-    "question": "Which operation is typically O(1) for a singly linked list when the head is known?",
-    "options": [
-      "Access the 100th item",
-      "Insert at head",
-      "Search by value",
-      "Sort all nodes"
-    ],
-    "correct": 1,
-    "explanation": "Head insertion changes a constant number of pointers."
-  },
-  {
-    "id": "Q075",
-    "category": "DSA",
-    "difficulty": "Easy",
-    "question": "What is the space complexity of storing n elements in an array?",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n²)"
-    ],
-    "correct": 2,
-    "explanation": "The array allocates storage proportional to its element count."
-  },
-  {
-    "id": "Q076",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "What is the worst-case time complexity of quicksort?",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(n²)"
-    ],
-    "correct": 3,
-    "explanation": "Highly unbalanced partitions can produce quadratic work."
-  },
-  {
-    "id": "Q077",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "What is the typical average time complexity of quicksort?",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(n²)"
-    ],
-    "correct": 2,
-    "explanation": "Balanced partitions lead to O(n log n) expected time."
-  },
-  {
-    "id": "Q078",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of inserting into a binary heap?",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "correct": 1,
-    "explanation": "The new element may bubble up one heap level at a time."
-  },
-  {
-    "id": "Q079",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of extracting the minimum from a binary min-heap?",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "correct": 1,
-    "explanation": "Removing the root and restoring heap order takes logarithmic time."
-  },
-  {
-    "id": "Q080",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "Which algorithm finds shortest paths from one source when all edge weights are non-negative?",
-    "options": [
-      "DFS",
-      "Dijkstra",
-      "Kruskal",
-      "Topological sort"
-    ],
-    "correct": 1,
-    "explanation": "Dijkstra’s greedy strategy is valid for non-negative edge weights."
-  },
-  {
-    "id": "Q081",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "Which algorithm builds a minimum spanning tree by adding the lightest safe edge?",
-    "options": [
-      "KMP",
-      "Kruskal",
-      "Binary search",
-      "Floyd-Warshall"
-    ],
-    "correct": 1,
-    "explanation": "Kruskal sorts edges and uses disjoint sets to avoid cycles."
-  },
-  {
-    "id": "Q082",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "Which data structure efficiently supports union and find operations?",
-    "options": [
-      "Disjoint-set union",
-      "Stack",
-      "Trie",
-      "Deque"
-    ],
-    "correct": 0,
-    "explanation": "DSU maintains connected components with union/find."
-  },
-  {
-    "id": "Q083",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of merging two sorted arrays of total length n?",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n²)"
-    ],
-    "correct": 2,
-    "explanation": "Each element is processed once during the merge."
-  },
-  {
-    "id": "Q084",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "Which sorting algorithm is stable in its standard implementation?",
-    "options": [
-      "Heap sort",
-      "Merge sort",
-      "Selection sort",
-      "Quick sort"
-    ],
-    "correct": 1,
-    "explanation": "A stable merge can preserve the order of equal keys."
-  },
-  {
-    "id": "Q085",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "What is the worst-case search time in an unbalanced BST with n nodes?",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "correct": 2,
-    "explanation": "A skewed BST behaves like a linked list."
-  },
-  {
-    "id": "Q086",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "What is the height of a perfectly balanced binary tree with n nodes, asymptotically?",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n²)"
-    ],
-    "correct": 1,
-    "explanation": "Each level roughly doubles the number of nodes."
-  },
-  {
-    "id": "Q087",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "Which data structure is commonly used for autocomplete prefix search?",
-    "options": [
-      "Trie",
-      "Stack",
-      "Heap",
-      "Disjoint set"
-    ],
-    "correct": 0,
-    "explanation": "A trie shares prefixes along paths."
-  },
-  {
-    "id": "Q088",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "Which technique solves problems by storing results of overlapping subproblems?",
-    "options": [
-      "Greedy only",
-      "Dynamic programming",
-      "Linear probing",
-      "Backtracking only"
-    ],
-    "correct": 1,
-    "explanation": "Dynamic programming reuses previously computed subproblem results."
-  },
-  {
-    "id": "Q089",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "Which approach explores all candidate solutions and abandons invalid partial choices?",
-    "options": [
-      "Backtracking",
-      "Hashing",
-      "Heapify",
-      "Binary search"
-    ],
-    "correct": 0,
-    "explanation": "Backtracking prunes a search when a partial solution cannot work."
-  },
-  {
-    "id": "Q090",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of BFS using an adjacency list?",
-    "options": [
-      "O(V)",
-      "O(E)",
-      "O(V + E)",
-      "O(V × E)"
-    ],
-    "correct": 2,
-    "explanation": "Each vertex and each edge is processed a constant number of times."
-  },
-  {
-    "id": "Q091",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "In a directed acyclic graph, what ordering places every source before its outgoing neighbors?",
-    "options": [
-      "Inorder",
-      "Topological order",
-      "Heap order",
-      "Lexicographic hash"
-    ],
-    "correct": 1,
-    "explanation": "A topological ordering respects every directed edge."
-  },
-  {
-    "id": "Q092",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "Which collision strategy stores multiple entries in a bucket at each table index?",
-    "options": [
-      "Separate chaining",
-      "Binary lifting",
-      "Heapify",
-      "Path compression"
-    ],
-    "correct": 0,
-    "explanation": "Separate chaining keeps colliding keys in a bucket structure."
-  },
-  {
-    "id": "Q093",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "What is the load factor of a hash table?",
-    "options": [
-      "Buckets divided by keys",
-      "Keys divided by table capacity",
-      "Capacity squared",
-      "Number of collisions only"
-    ],
-    "correct": 1,
-    "explanation": "Load factor is the number of stored entries divided by capacity."
-  },
-  {
-    "id": "Q094",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "Which structure supports insertion and deletion at both ends?",
-    "options": [
-      "Deque",
-      "Stack only",
-      "Binary tree",
-      "Trie"
-    ],
-    "correct": 0,
-    "explanation": "A double-ended queue supports operations at front and rear."
-  },
-  {
-    "id": "Q095",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "What is the amortized time complexity of append in a dynamic array?",
-    "options": [
-      "O(n) always",
-      "O(log n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "correct": 2,
-    "explanation": "Occasional resizing is spread across many constant-time appends."
-  },
-  {
-    "id": "Q096",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "Which algorithm detects a cycle in a directed graph using recursion states?",
-    "options": [
-      "DFS coloring",
-      "Bubble sort",
-      "Kruskal",
-      "Counting sort"
-    ],
-    "correct": 0,
-    "explanation": "A back edge to a currently active DFS node indicates a cycle."
-  },
-  {
-    "id": "Q097",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "Which two pointers technique can find a pair in a sorted array in O(n)?",
-    "options": [
-      "Slow/fast only",
-      "Left and right pointers",
-      "Two stacks",
-      "Two queues"
-    ],
-    "correct": 1,
-    "explanation": "Move the left or right pointer according to the current sum."
-  },
-  {
-    "id": "Q098",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of building a binary heap from n items using bottom-up heapify?",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(log n)",
-      "O(n²)"
-    ],
-    "correct": 0,
-    "explanation": "Most nodes are near the leaves and require little sifting."
-  },
-  {
-    "id": "Q099",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "Which algorithm computes all-pairs shortest paths using dynamic programming?",
-    "options": [
-      "Dijkstra",
-      "Floyd-Warshall",
-      "Kruskal",
-      "Prim"
-    ],
-    "correct": 1,
-    "explanation": "Floyd-Warshall considers each vertex as an intermediate point."
-  },
-  {
-    "id": "Q100",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "What is the purpose of a sentinel node in a linked list?",
-    "options": [
-      "To sort nodes",
-      "To simplify boundary handling",
-      "To hash values",
-      "To balance a tree"
-    ],
-    "correct": 1,
-    "explanation": "A dummy node can reduce special cases at list boundaries."
-  },
-  {
-    "id": "Q101",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "Which traversal visits a tree level by level?",
-    "options": [
-      "Preorder",
-      "Inorder",
-      "Level order",
-      "Postorder"
-    ],
-    "correct": 2,
-    "explanation": "Level-order traversal uses a queue to process each depth."
-  },
-  {
-    "id": "Q102",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "Which data structure is commonly used in an LRU cache?",
-    "options": [
-      "Queue + stack",
-      "Hash map + doubly linked list",
-      "Heap + trie",
-      "Graph + array"
-    ],
-    "correct": 1,
-    "explanation": "The map gives fast lookup and the list maintains recency order."
-  },
-  {
-    "id": "Q103",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "What is the worst-case time complexity of searching in a hash table?",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "correct": 2,
-    "explanation": "All keys may collide into one bucket."
-  },
-  {
-    "id": "Q104",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "Which algorithm is suitable for finding a minimum spanning tree in a connected weighted graph?",
-    "options": [
-      "Prim",
-      "KMP",
-      "Boyer-Moore",
-      "Bellman-Ford"
-    ],
-    "correct": 0,
-    "explanation": "Prim grows a tree by repeatedly choosing a light crossing edge."
-  },
-  {
-    "id": "Q105",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "What does path compression optimize in DSU?",
-    "options": [
-      "Queue ordering",
-      "Find operation",
-      "Heap insertion",
-      "Tree traversal"
-    ],
-    "correct": 1,
-    "explanation": "It makes visited nodes point closer to the representative."
-  },
-  {
-    "id": "Q106",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "Which technique is useful for detecting a cycle in a singly linked list with O(1) extra space?",
-    "options": [
-      "Merge sort",
-      "Floyd slow-fast pointers",
-      "Binary search",
-      "BFS"
-    ],
-    "correct": 1,
-    "explanation": "The fast pointer eventually meets the slow pointer if a cycle exists."
-  },
-  {
-    "id": "Q107",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "What is the time complexity of KMP pattern matching for text length n and pattern length m?",
-    "options": [
-      "O(nm)",
-      "O(n + m)",
-      "O(n log m)",
-      "O(m²)"
-    ],
-    "correct": 1,
-    "explanation": "The prefix table prevents rechecking matched text characters."
-  },
-  {
-    "id": "Q108",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "Which shortest-path algorithm supports negative edges but no reachable negative cycle?",
-    "options": [
-      "Dijkstra",
-      "Bellman-Ford",
-      "Prim",
-      "Kruskal"
-    ],
-    "correct": 1,
-    "explanation": "Bellman-Ford relaxes all edges repeatedly and detects negative cycles."
-  },
-  {
-    "id": "Q109",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "What is the time complexity of a standard Fenwick tree point update and prefix sum?",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "correct": 1,
-    "explanation": "The index moves by its least significant set bit."
-  },
-  {
-    "id": "Q110",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "Which data structure supports range minimum queries with point updates in O(log n)?",
-    "options": [
-      "Stack",
-      "Segment tree",
-      "Queue",
-      "Trie"
-    ],
-    "correct": 1,
-    "explanation": "A segment tree updates and queries logarithmically many nodes."
-  },
-  {
-    "id": "Q111",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "What is the key property of a monotonic stack?",
-    "options": [
-      "Items are always random",
-      "Items remain in sorted/monotone order",
-      "It is FIFO",
-      "It stores only duplicates"
-    ],
-    "correct": 1,
-    "explanation": "Maintaining monotonic order helps resolve next-greater/smaller queries."
-  },
-  {
-    "id": "Q112",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "What is the time complexity of finding the median of two sorted arrays in the optimal algorithm?",
-    "options": [
-      "O(n + m)",
-      "O(log(min(n,m)))",
-      "O(nm)",
-      "O(log(nm))"
-    ],
-    "correct": 1,
-    "explanation": "Binary search partitions the shorter array."
-  },
-  {
-    "id": "Q113",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "Which algorithm finds strongly connected components in a directed graph using two DFS passes?",
-    "options": [
-      "Kosaraju",
-      "Prim",
-      "Dijkstra",
-      "Kruskal"
-    ],
-    "correct": 0,
-    "explanation": "Kosaraju runs DFS on the graph and its transpose in finishing order."
-  },
-  {
-    "id": "Q114",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "What is the maximum number of edges in a simple undirected graph with V vertices?",
-    "options": [
-      "V²",
-      "V(V−1)/2",
-      "V−1",
-      "2V"
-    ],
-    "correct": 1,
-    "explanation": "Every unordered pair of distinct vertices can contribute one edge."
-  },
-  {
-    "id": "Q115",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "Which technique can optimize DP when the transition has a convex-hull structure?",
-    "options": [
-      "Convex hull trick",
-      "Linear probing",
-      "Heap sort",
-      "Two queues"
-    ],
-    "correct": 0,
-    "explanation": "The convex hull trick maintains candidate linear functions efficiently."
-  },
-  {
-    "id": "Q116",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "What is the time complexity of a suffix array construction using a common O(n log n) doubling method?",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(n log² n)",
-      "O(n²)"
-    ],
-    "correct": 2,
-    "explanation": "Each of O(log n) rounds sorts n suffix-rank pairs."
-  },
-  {
-    "id": "Q117",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "Which algorithm finds articulation points in an undirected graph in O(V+E)?",
-    "options": [
-      "Tarjan DFS low-link method",
-      "Dijkstra",
-      "Floyd-Warshall",
-      "KMP"
-    ],
-    "correct": 0,
-    "explanation": "Discovery times and low-link values identify separating vertices."
-  },
-  {
-    "id": "Q118",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "What is the key condition for applying Dijkstra correctly?",
-    "options": [
-      "All edges are distinct",
-      "All edge weights are non-negative",
-      "Graph is a tree",
-      "Graph is undirected"
-    ],
-    "correct": 1,
-    "explanation": "Negative edges can invalidate the greedy finalization step."
-  },
-  {
-    "id": "Q119",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "In a lazy segment tree, what does a lazy tag represent?",
-    "options": [
-      "A pending range update",
-      "A deleted leaf",
-      "A hash collision",
-      "A graph edge"
-    ],
-    "correct": 0,
-    "explanation": "The tag records an update to propagate to children only when needed."
-  },
-  {
-    "id": "Q120",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "Which data structure is useful for answering offline range queries sorted by block order?",
-    "options": [
-      "Mo’s algorithm with frequency state",
-      "Binary heap only",
-      "Trie",
-      "Call stack"
-    ],
-    "correct": 0,
-    "explanation": "Mo’s algorithm reorders queries to minimize pointer movement."
-  },
-  {
-    "id": "Q121",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "What is the amortized complexity of a sequence of push and pop operations on a stack?",
-    "options": [
-      "O(n²)",
-      "O(n log n)",
-      "O(n) total",
-      "O(1) total for all operations"
-    ],
-    "correct": 2,
-    "explanation": "Each item is pushed and popped at most once, so the sequence is linear."
-  },
-  {
-    "id": "Q122",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "Which algorithm finds a maximum flow in a network using augmenting paths and BFS?",
-    "options": [
-      "Edmonds-Karp",
-      "Prim",
-      "KMP",
-      "A*"
-    ],
-    "correct": 0,
-    "explanation": "Edmonds-Karp uses BFS to find shortest augmenting paths."
-  },
-  {
-    "id": "Q123",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "What is the time complexity of Edmonds-Karp in terms of V and E?",
-    "options": [
-      "O(VE)",
-      "O(VE²)",
-      "O(V²E)",
-      "O(E log V)"
-    ],
-    "correct": 1,
-    "explanation": "The BFS-based augmenting path bound is O(VE²)."
-  },
-  {
-    "id": "Q124",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "Which property does a red-black tree guarantee?",
-    "options": [
-      "Every path has equal length",
-      "Height is O(log n)",
-      "All leaves store keys",
-      "It is always complete"
-    ],
-    "correct": 1,
-    "explanation": "Color constraints bound the height logarithmically."
-  },
-  {
-    "id": "Q125",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "What is the main advantage of a B-tree in database indexing?",
-    "options": [
-      "Minimizes disk I/O with high branching factor",
-      "Constant-time sorting",
-      "No balancing required",
-      "Stores only binary values"
-    ],
-    "correct": 0,
-    "explanation": "High fan-out reduces tree height and disk accesses."
-  },
-  {
-    "id": "Q126",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "Which algorithm can find a negative cycle reachable from a source?",
-    "options": [
-      "Bellman-Ford extra relaxation pass",
-      "Prim",
-      "Binary search",
-      "Kruskal"
-    ],
-    "correct": 0,
-    "explanation": "A further successful relaxation after V−1 rounds signals a reachable negative cycle."
-  },
-  {
-    "id": "Q127",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "What is the time complexity of A* with a consistent heuristic in typical graph-search analysis?",
-    "options": [
-      "Always O(1)",
-      "Depends on explored states; no single polynomial bound",
-      "Always O(V+E)",
-      "Always O(log V)"
-    ],
-    "correct": 1,
-    "explanation": "Its work depends on the heuristic and number of explored states."
-  },
-  {
-    "id": "Q128",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "Which technique reduces repeated subproblem work in recursive algorithms?",
-    "options": [
-      "Memoization",
-      "Linear probing",
-      "Heap deletion",
-      "Adjacency matrix"
-    ],
-    "correct": 0,
-    "explanation": "Memoization caches results keyed by subproblem state."
-  },
-  {
-    "id": "Q129",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "What does a topological sort imply about a graph?",
-    "options": [
-      "It is a DAG",
-      "It is complete",
-      "It is undirected",
-      "It is weighted"
-    ],
-    "correct": 0,
-    "explanation": "A topological order exists exactly for directed acyclic graphs."
-  },
-  {
-    "id": "Q130",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "Which structure supports efficient prefix XOR queries with point updates?",
-    "options": [
-      "Fenwick tree",
-      "Stack",
-      "Binary heap",
-      "Queue"
-    ],
-    "correct": 0,
-    "explanation": "A Fenwick tree can maintain prefix XOR using the same index structure."
-  },
-  {
-    "id": "Q131",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "For an AVL tree, what is the allowed balance-factor range at every node?",
-    "options": [
-      "Only 0",
-      "−1, 0, or 1",
-      "−2 to 2",
-      "Any integer"
-    ],
-    "correct": 1,
-    "explanation": "AVL nodes keep subtree heights differing by at most one."
-  },
-  {
-    "id": "Q132",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "Which algorithm is commonly used to compute bridges in an undirected graph?",
-    "options": [
-      "DFS low-link values",
-      "Dijkstra",
-      "Kruskal",
-      "Counting sort"
-    ],
-    "correct": 0,
-    "explanation": "An edge is a bridge when its child subtree cannot reach an ancestor."
-  },
-  {
-    "id": "Q133",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "What is the time complexity of radix sort for n keys with d digits and base k?",
-    "options": [
-      "O(n log n)",
-      "O(d(n+k))",
-      "O(n²)",
-      "O(k log d)"
-    ],
-    "correct": 1,
-    "explanation": "Each digit pass uses a stable counting-style sort."
-  },
-  {
-    "id": "Q134",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "Which approach is used by the classic 0/1 knapsack DP?",
-    "options": [
-      "Sort by ratio greedily",
-      "State by item index and capacity",
-      "BFS over graph edges",
-      "Binary search only"
-    ],
-    "correct": 1,
-    "explanation": "Each item is either excluded or included once in the capacity state."
-  },
-  {
-    "id": "Q135",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "What is the time complexity of the standard 0/1 knapsack DP with n items and capacity W?",
-    "options": [
-      "O(nW)",
-      "O(n log W)",
-      "O(W²)",
-      "O(2ⁿ)"
-    ],
-    "correct": 0,
-    "explanation": "The table considers each item across all capacities."
-  },
-  {
-    "id": "Q136",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "Which data structure can answer kth-smallest queries in a dynamic set using order statistics?",
-    "options": [
-      "Balanced BST augmented with subtree sizes",
-      "Simple queue",
-      "Stack",
-      "Adjacency list"
-    ],
-    "correct": 0,
-    "explanation": "Subtree sizes guide selection by rank."
-  },
-  {
-    "id": "Q137",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "What is the purpose of a Bloom filter?",
-    "options": [
-      "Exact key-value storage",
-      "Probabilistic set membership with possible false positives",
-      "Sorting strings",
-      "Finding shortest paths"
-    ],
-    "correct": 1,
-    "explanation": "Bloom filters may say “possibly present” for absent items but avoid false negatives when used correctly."
-  },
-  {
-    "id": "Q138",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "Which string algorithm uses Z-values to find pattern occurrences in linear time?",
-    "options": [
-      "Z algorithm",
-      "Prim",
-      "Dijkstra",
-      "Floyd-Warshall"
-    ],
-    "correct": 0,
-    "explanation": "The Z array stores longest matches with the prefix at each position."
-  },
-  {
-    "id": "Q139",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "What is the time complexity of building a suffix automaton for a string of length n?",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(n²)",
-      "O(2ⁿ)"
-    ],
-    "correct": 0,
-    "explanation": "A suffix automaton can be built in linear time."
-  },
-  {
-    "id": "Q140",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "Which graph algorithm computes transitive closure using a triple nested loop?",
-    "options": [
-      "Warshall algorithm",
-      "Kruskal",
-      "KMP",
-      "Prim"
-    ],
-    "correct": 0,
-    "explanation": "Warshall updates reachability through each possible intermediate vertex."
-  },
-  {
-    "id": "Q141",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "What is the main purpose of heavy-light decomposition?",
-    "options": [
-      "Speed up tree path queries by splitting paths",
-      "Compress strings",
-      "Sort edges",
-      "Detect hash collisions"
-    ],
-    "correct": 0,
-    "explanation": "It decomposes tree paths into logarithmically many heavy segments."
-  },
-  {
-    "id": "Q142",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "Which technique is often used to answer offline connectivity queries with edge additions and rollback?",
-    "options": [
-      "DSU rollback",
-      "Dijkstra",
-      "Trie",
-      "Stack sorting"
-    ],
-    "correct": 0,
-    "explanation": "Rollback DSU restores earlier component state between query branches."
-  },
-  {
-    "id": "Q143",
-    "category": "DSA",
-    "difficulty": "Hard",
-    "question": "What does the potential method analyze in amortized analysis?",
-    "options": [
-      "A stored potential function over data-structure states",
-      "Only worst input values",
-      "CPU clock speed",
-      "Memory addresses"
-    ],
-    "correct": 0,
-    "explanation": "Potential changes account for cheap and expensive operations across a sequence."
-  },
-  {
-    "id": "Q144",
-    "category": "DSA",
-    "difficulty": "Easy",
-    "question": "How many children can a binary-tree node have at most?",
+    "type": "mcq",
+    "question": "In a Binary Tree, what is the MAXIMUM number of children any node can have?",
     "options": [
       "1",
       "2",
@@ -2013,90 +966,1359 @@
       "Unlimited"
     ],
     "correct": 1,
-    "explanation": "A binary tree node has at most two children."
+    "explanation": "A binary tree node can have at most 2 children."
   },
   {
-    "id": "Q145",
+    "id": "Q064",
     "category": "DSA",
     "difficulty": "Easy",
-    "question": "Which notation describes an asymptotic upper bound?",
+    "type": "mcq",
+    "question": "What is a node in a tree with NO children called?",
     "options": [
-      "Omega",
-      "Theta",
-      "Big-O",
-      "Little-omega"
+      "Root",
+      "Internal node",
+      "Leaf node",
+      "Parent node"
     ],
     "correct": 2,
-    "explanation": "Big-O gives an asymptotic upper bound."
+    "explanation": "A leaf node has zero children."
   },
   {
-    "id": "Q146",
+    "id": "Q065",
     "category": "DSA",
     "difficulty": "Easy",
-    "question": "Which notation describes a tight asymptotic bound?",
+    "type": "mcq",
+    "question": "What must every recursive function have to prevent infinite recursion?",
     "options": [
-      "Big-O",
-      "Big-Omega",
-      "Big-Theta",
-      "Little-o"
+      "A global variable",
+      "A base condition",
+      "A while loop",
+      "A stack pointer"
     ],
-    "correct": 2,
-    "explanation": "Theta bounds growth both above and below."
+    "correct": 1,
+    "explanation": "A base condition terminates recursion."
   },
   {
-    "id": "Q147",
+    "id": "Q066",
     "category": "DSA",
     "difficulty": "Easy",
-    "question": "Which sorting algorithm repeatedly swaps adjacent out-of-order elements?",
+    "type": "mcq",
+    "question": "Which Big-O notation represents constant time complexity?",
     "options": [
-      "Bubble sort",
-      "Merge sort",
-      "Heap sort",
-      "Radix sort"
-    ],
-    "correct": 0,
-    "explanation": "Bubble sort compares and swaps adjacent elements."
-  },
-  {
-    "id": "Q148",
-    "category": "DSA",
-    "difficulty": "Easy",
-    "question": "Which structure is ideal for checking balanced parentheses?",
-    "options": [
-      "Stack",
-      "Queue",
-      "Graph",
-      "Heap"
-    ],
-    "correct": 0,
-    "explanation": "Opening brackets are pushed and matched with closing brackets."
-  },
-  {
-    "id": "Q149",
-    "category": "DSA",
-    "difficulty": "Medium",
-    "question": "What is the worst-case time complexity of insertion sort?",
-    "options": [
+      "O(1)",
       "O(n)",
       "O(log n)",
-      "O(n²)",
-      "O(n log n)"
+      "O(n!)"
     ],
-    "correct": 2,
-    "explanation": "Reverse-sorted input causes many shifts."
+    "correct": 0,
+    "explanation": "O(1) means execution time does not depend on input size."
   },
   {
-    "id": "Q150",
+    "id": "Q067",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "type": "error",
+    "question": "Find the error in this array traversal loop:",
+    "code": "Line 1: arr = [10, 20, 30, 40]\nLine 2: for i in range(len(arr) + 1):\nLine 3:     print(arr[i])",
+    "options": [
+      "Line 2: range(len(arr) + 1) will cause an IndexError on the final iteration",
+      "Line 1: Array cannot hold 4 integers",
+      "Line 3: Array elements cannot be printed in loops",
+      "Line 2: len() cannot be used in loops"
+    ],
+    "correct": 0,
+    "explanation": "len(arr) is 4. range(5) tries to access arr[4], which is out of bounds."
+  },
+  {
+    "id": "Q068",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "type": "error",
+    "question": "Find the bug in this factorial recursive function:",
+    "code": "Line 1: def factorial(n):\nLine 2:     return n * factorial(n - 1)",
+    "options": [
+      "Line 1: Function name cannot be factorial",
+      "Line 2: Missing base condition (e.g. if n <= 1: return 1), causing infinite recursion",
+      "Line 2: Multiplication cannot be used with recursion",
+      "Line 2: Must be factorial(n + 1)"
+    ],
+    "correct": 1,
+    "explanation": "Without a base condition, the function calls itself indefinitely until maximum recursion depth is exceeded."
+  },
+  {
+    "id": "Q069",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "type": "error",
+    "question": "Find the error in this stack pop implementation:",
+    "code": "Line 1: def pop_item(stack):\nLine 2:     item = stack.pop()\nLine 3:     return item",
+    "options": [
+      "Line 1: Function cannot accept stack",
+      "Line 2: Missing check if stack is empty before popping (causes IndexError/underflow)",
+      "Line 3: pop() cannot return values",
+      "Line 2: pop must take an argument"
+    ],
+    "correct": 1,
+    "explanation": "Calling pop() on an empty stack raises an error. It must check if stack: before popping."
+  },
+  {
+    "id": "Q070",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "type": "error",
+    "question": "Find the error in this linked list node class:",
+    "code": "Line 1: class Node:\nLine 2:     def __init__(self, data):\nLine 3:         self.data = data\nLine 4:         self.next = data",
+    "options": [
+      "Line 1: Node class must inherit from List",
+      "Line 4: self.next should be initialized to None, not data",
+      "Line 3: self.data cannot be initialized",
+      "Line 2: Missing constructor"
+    ],
+    "correct": 1,
+    "explanation": "A new node next pointer should point to None (or NULL), not the data value."
+  },
+  {
+    "id": "Q071",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "type": "error",
+    "question": "Find the error in this queue dequeue operation:",
+    "code": "Line 1: # Queue represented as a list: [first, second, third]\nLine 2: def dequeue(queue):\nLine 3:     return queue.pop()",
+    "options": [
+      "Line 2: Functions cannot be called dequeue",
+      "Line 3: queue.pop() removes from the END (LIFO/Stack); Queue requires queue.pop(0) for FIFO",
+      "Line 3: Queue cannot return values",
+      "Line 1: Comments cannot start with #"
+    ],
+    "correct": 1,
+    "explanation": "queue.pop() removes the last element (LIFO). A FIFO queue must dequeue from the front using pop(0)."
+  },
+  {
+    "id": "Q072",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "type": "error",
+    "question": "Find the error in this linear search function:",
+    "code": "Line 1: def linear_search(arr, target):\nLine 2:     for i in range(len(arr)):\nLine 3:         if arr[i] == target:\nLine 4:             return i\nLine 5:         return -1",
+    "options": [
+      "Line 1: Search requires sorted arrays",
+      "Line 5: return -1 is indented inside the loop; returns -1 after checking ONLY the first item",
+      "Line 3: Cannot compare array item with target",
+      "Line 4: return i is invalid"
+    ],
+    "correct": 1,
+    "explanation": "return -1 is inside the loop, causing it to return on the very first iteration if arr[0] != target. It must be outside the loop."
+  },
+  {
+    "id": "Q073",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "type": "error",
+    "question": "Find the error in this array element swap:",
+    "code": "Line 1: arr[i] = arr[j]\nLine 2: arr[j] = arr[i]",
+    "options": [
+      "Line 1: Overwrites arr[i] before saving it, causing both elements to have arr[j] value",
+      "Line 2: arr[j] cannot be assigned",
+      "Line 1: Square brackets invalid for arrays",
+      "Line 2: Semicolon missing"
+    ],
+    "correct": 0,
+    "explanation": "Without a temporary variable (or tuple swap arr[i], arr[j] = arr[j], arr[i]), Line 1 destroys the original value of arr[i]."
+  },
+  {
+    "id": "Q074",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "type": "error",
+    "question": "Find the error in this countdown recursive function:",
+    "code": "Line 1: def countdown(n):\nLine 2:     if n == 0: return\nLine 3:     print(n)\nLine 4:     countdown(n)",
+    "options": [
+      "Line 1: n cannot be an argument",
+      "Line 4: countdown(n) does not decrement n, causing infinite recursion",
+      "Line 2: Base case cannot use return",
+      "Line 3: print must be inside if"
+    ],
+    "correct": 1,
+    "explanation": "The recursive step must call countdown(n - 1) to make progress towards the base condition."
+  },
+  {
+    "id": "Q075",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "type": "error",
+    "question": "Find the error in this minimum value search:",
+    "code": "Line 1: def find_min(arr):\nLine 2:     min_val = 0\nLine 3:     for x in arr:\nLine 4:         if x < min_val: min_val = x\nLine 5:     return min_val",
+    "options": [
+      "Line 1: arr must be a dictionary",
+      "Line 2: Initializing min_val to 0 fails if all array elements are positive (should be arr[0])",
+      "Line 3: for loop cannot iterate arrays",
+      "Line 4: x cannot be compared with min_val"
+    ],
+    "correct": 1,
+    "explanation": "If arr = [10, 20, 30], min_val remains 0 (which is not in the array). Initializing with arr[0] fixes this."
+  },
+  {
+    "id": "Q076",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "type": "error",
+    "question": "Find the error in this linked list traversal:",
+    "code": "Line 1: curr = head\nLine 2: while curr is not None:\nLine 3:     print(curr.data)\nLine 4:     # missing step",
+    "options": [
+      "Line 1: head must be an array",
+      "Line 4: Missing curr = curr.next, causing an infinite loop printing head data",
+      "Line 2: while loop cannot check None",
+      "Line 3: curr.data is invalid syntax"
+    ],
+    "correct": 1,
+    "explanation": "Traversing a linked list requires advancing the pointer with curr = curr.next at each step."
+  },
+  {
+    "id": "Q077",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "type": "error",
+    "question": "Find the bug in this binary search mid-point calculation:",
+    "code": "Line 1: low = 0\nLine 2: high = len(arr) - 1\nLine 3: mid = (low - high) // 2",
+    "options": [
+      "Line 1: low must start at 1",
+      "Line 3: Midpoint formula should be (low + high) // 2, not minus",
+      "Line 2: high cannot use len(arr)",
+      "Line 3: // operator is not allowed"
+    ],
+    "correct": 1,
+    "explanation": "The midpoint is the average of low and high: (low + high) // 2."
+  },
+  {
+    "id": "Q078",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "type": "error",
+    "question": "Find the error in this sum array function:",
+    "code": "Line 1: def sum_arr(arr):\nLine 2:     total = 0\nLine 3:     for i in range(len(arr)):\nLine 4:         total += i\nLine 5:     return total",
+    "options": [
+      "Line 1: Function cannot be called sum_arr",
+      "Line 4: total += i adds the index instead of the array element arr[i]",
+      "Line 2: total must start at 1",
+      "Line 5: return cannot return total"
+    ],
+    "correct": 1,
+    "explanation": "total += i sums the indices 0, 1, 2... instead of the actual array elements arr[i]."
+  },
+  {
+    "id": "Q079",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "type": "error",
+    "question": "Find the error in this stack peek operation:",
+    "code": "Line 1: def peek(stack):\nLine 2:     return stack.pop()",
+    "options": [
+      "Line 1: Stack must be a tuple",
+      "Line 2: pop() REMOVES the item; peek must only inspect without removing (e.g. stack[-1])",
+      "Line 2: pop() cannot be called in peek",
+      "Line 1: peek is a reserved keyword"
+    ],
+    "correct": 1,
+    "explanation": "Peek must inspect the top element without removing it. Using pop() mutates the stack."
+  },
+  {
+    "id": "Q080",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "type": "error",
+    "question": "Find the error in this tree leaf check:",
+    "code": "Line 1: def is_leaf(node):\nLine 2:     return node.left is None or node.right is None",
+    "options": [
+      "Line 1: Function cannot take node",
+      "Line 2: A leaf node must have BOTH children None (use \"and\", not \"or\")",
+      "Line 2: None cannot be used in tree checks",
+      "Line 1: Leaf cannot be checked with boolean"
+    ],
+    "correct": 1,
+    "explanation": "A node is a leaf if and only if BOTH left and right children are None (node.left is None and node.right is None)."
+  },
+  {
+    "id": "Q081",
     "category": "DSA",
     "difficulty": "Medium",
-    "question": "Which traversal of a binary tree visits the node before its subtrees?",
+    "type": "mcq",
+    "question": "What is the worst-case time complexity of Bubble Sort?",
     "options": [
-      "Inorder",
+      "O(n)",
+      "O(n log n)",
+      "O(n²)",
+      "O(1)"
+    ],
+    "correct": 2,
+    "explanation": "Bubble Sort takes O(n²) time in the worst case due to nested comparisons."
+  },
+  {
+    "id": "Q082",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "mcq",
+    "question": "Which sorting algorithm uses divide-and-conquer to split, sort, and merge subarrays?",
+    "options": [
+      "Merge Sort",
+      "Bubble Sort",
+      "Selection Sort",
+      "Insertion Sort"
+    ],
+    "correct": 0,
+    "explanation": "Merge Sort divides the array into halves, sorts them recursively, and merges."
+  },
+  {
+    "id": "Q083",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "mcq",
+    "question": "What is the time complexity of Merge Sort in all cases?",
+    "options": [
+      "O(n)",
+      "O(n log n)",
+      "O(n²)",
+      "O(log n)"
+    ],
+    "correct": 1,
+    "explanation": "Merge Sort consistently takes O(n log n) time in best, average, and worst cases."
+  },
+  {
+    "id": "Q084",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "mcq",
+    "question": "In a Binary Search Tree (BST), where are keys smaller than the root stored?",
+    "options": [
+      "In the right subtree",
+      "In the left subtree",
+      "At the root",
+      "In random nodes"
+    ],
+    "correct": 1,
+    "explanation": "All keys in the left subtree are smaller than the root key in a BST."
+  },
+  {
+    "id": "Q085",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "mcq",
+    "question": "Which tree traversal processes nodes in order: Left, Root, Right?",
+    "options": [
       "Preorder",
+      "Inorder",
       "Postorder",
       "Level order"
     ],
     "correct": 1,
-    "explanation": "Preorder visits root, left, then right."
+    "explanation": "Inorder visits Left subtree, then Root, then Right subtree."
+  },
+  {
+    "id": "Q086",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "mcq",
+    "question": "Which tree traversal of a BST produces keys in strictly ascending SORTED order?",
+    "options": [
+      "Preorder",
+      "Inorder",
+      "Postorder",
+      "Breadth-First"
+    ],
+    "correct": 1,
+    "explanation": "Inorder traversal of a BST yields nodes in ascending sorted order."
+  },
+  {
+    "id": "Q087",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "mcq",
+    "question": "Which data structure is primarily used to implement Breadth-First Search (BFS)?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Priority Queue",
+      "Array only"
+    ],
+    "correct": 1,
+    "explanation": "BFS explores vertices level by level using a FIFO Queue."
+  },
+  {
+    "id": "Q088",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "mcq",
+    "question": "Which data structure (or call stack) is primarily used to implement Depth-First Search (DFS)?",
+    "options": [
+      "Queue",
+      "Stack (or Call Stack)",
+      "Hash Table",
+      "Linked List"
+    ],
+    "correct": 1,
+    "explanation": "DFS traverses deeply down paths using recursion or a LIFO Stack."
+  },
+  {
+    "id": "Q089",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "mcq",
+    "question": "What is a Hash Collision?",
+    "options": [
+      "When the hash table is out of memory",
+      "When two different keys produce the same bucket index",
+      "When a key is deleted",
+      "When search takes O(1)"
+    ],
+    "correct": 1,
+    "explanation": "A collision happens when two distinct keys hash to the same bucket."
+  },
+  {
+    "id": "Q090",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "mcq",
+    "question": "What is the average time complexity for key lookup in a Hash Table?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "correct": 0,
+    "explanation": "Hash tables offer average O(1) constant time lookups."
+  },
+  {
+    "id": "Q091",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "mcq",
+    "question": "What is the worst-case time complexity of Selection Sort?",
+    "options": [
+      "O(n)",
+      "O(n log n)",
+      "O(n²)",
+      "O(1)"
+    ],
+    "correct": 2,
+    "explanation": "Selection Sort makes O(n²) comparisons in all cases."
+  },
+  {
+    "id": "Q092",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "mcq",
+    "question": "What is the height of a balanced binary tree with n nodes?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n²)"
+    ],
+    "correct": 1,
+    "explanation": "A balanced binary tree has logarithmic height O(log n)."
+  },
+  {
+    "id": "Q093",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "mcq",
+    "question": "In a Min-Heap, where is the smallest element located?",
+    "options": [
+      "At the deepest leaf",
+      "At the root node",
+      "At the rightmost child",
+      "In a random position"
+    ],
+    "correct": 1,
+    "explanation": "In a Min-Heap, the root node always contains the minimum element."
+  },
+  {
+    "id": "Q094",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "mcq",
+    "question": "What is the time complexity to insert into a Binary Heap of size n?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n²)"
+    ],
+    "correct": 1,
+    "explanation": "Inserting adds at the bottom and bubbles up in O(log n) time."
+  },
+  {
+    "id": "Q095",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "mcq",
+    "question": "What algorithm detects a cycle in a linked list using slow and fast pointers?",
+    "options": [
+      "Binary Search",
+      "Floyd Cycle Detection Algorithm",
+      "Dijkstra",
+      "Quick Select"
+    ],
+    "correct": 1,
+    "explanation": "Floyd tortoise and hare uses two pointers moving at different speeds to detect cycles."
+  },
+  {
+    "id": "Q096",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "mcq",
+    "question": "Which technique optimizes recursion by caching already-solved subproblem results?",
+    "options": [
+      "Memoization (Dynamic Programming)",
+      "Greedy Choice",
+      "Binary Search",
+      "Randomization"
+    ],
+    "correct": 0,
+    "explanation": "Memoization stores subproblem solutions to prevent redundant recalculation."
+  },
+  {
+    "id": "Q097",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "mcq",
+    "question": "What is the time complexity of merging two sorted arrays of size m and n?",
+    "options": [
+      "O(m * n)",
+      "O(m + n)",
+      "O(log(m + n))",
+      "O(1)"
+    ],
+    "correct": 1,
+    "explanation": "Linear two-pointer scanning merges both arrays in O(m + n) time."
+  },
+  {
+    "id": "Q098",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "error",
+    "question": "Find the bug in this binary search implementation:",
+    "code": "Line 1: while low <= high:\nLine 2:     mid = (low + high) // 2\nLine 3:     if arr[mid] == target: return mid\nLine 4:     elif arr[mid] < target: low = mid\nLine 5:     else: high = mid",
+    "options": [
+      "Line 1: while condition must be low < high",
+      "Line 4 & 5: Must use low = mid + 1 and high = mid - 1, otherwise causes an infinite loop",
+      "Line 2: mid formula is invalid",
+      "Line 3: return mid is forbidden"
+    ],
+    "correct": 1,
+    "explanation": "Setting low = mid or high = mid without +/- 1 can trap binary search in an infinite loop when high - low == 1."
+  },
+  {
+    "id": "Q099",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "error",
+    "question": "Find the bug in this singly linked list deletion function:",
+    "code": "Line 1: def delete_node(head, key):\nLine 2:     curr = head\nLine 3:     while curr and curr.next:\nLine 4:         if curr.next.data == key:\nLine 5:             curr.next = curr.next\nLine 6:         curr = curr.next",
+    "options": [
+      "Line 1: Cannot pass head",
+      "Line 5: curr.next = curr.next does nothing; must be curr.next = curr.next.next to skip the node",
+      "Line 3: while loop condition is invalid",
+      "Line 4: Cannot check curr.next.data"
+    ],
+    "correct": 1,
+    "explanation": "To delete curr.next, the pointer must bypass it: curr.next = curr.next.next."
+  },
+  {
+    "id": "Q100",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "error",
+    "question": "Find the bug in this Fibonacci memoization implementation:",
+    "code": "Line 1: memo = {}\nLine 2: def fib(n):\nLine 3:     if n <= 1: return n\nLine 4:     if n in memo: return memo[n]\nLine 5:     return fib(n-1) + fib(n-2)",
+    "options": [
+      "Line 1: memo must be a list",
+      "Line 5: Result is returned directly without storing it in memo[n], defeating memoization",
+      "Line 3: Base case should be n == 0",
+      "Line 4: memo dictionary cannot check keys"
+    ],
+    "correct": 1,
+    "explanation": "Line 5 fails to store the computed value: memo[n] = fib(n-1) + fib(n-2); return memo[n]. Without storage, it remains O(2^n)."
+  },
+  {
+    "id": "Q101",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "error",
+    "question": "Find the bug in this BST search implementation:",
+    "code": "Line 1: def search_bst(root, val):\nLine 2:     if root is None or root.val == val: return root\nLine 3:     if val < root.val:\nLine 4:         return search_bst(root.right, val)\nLine 5:     return search_bst(root.left, val)",
+    "options": [
+      "Line 2: Root value cannot be checked with ==",
+      "Line 4 & 5: Subtrees are reversed; values smaller than root are in root.left, not root.right",
+      "Line 3: val cannot be compared to root.val",
+      "Line 1: Function name cannot contain bst"
+    ],
+    "correct": 1,
+    "explanation": "In a BST, values smaller than the root reside in root.left, while larger values reside in root.right."
+  },
+  {
+    "id": "Q102",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "error",
+    "question": "Find the error in this bubble sort optimization attempt:",
+    "code": "Line 1: for i in range(len(arr)):\nLine 2:     swapped = False\nLine 3:     for j in range(len(arr) - 1):\nLine 4:         if arr[j] > arr[j+1]:\nLine 5:             arr[j], arr[j+1] = arr[j+1], arr[j]\nLine 6:     if not swapped: break",
+    "options": [
+      "Line 1: Bubble sort cannot use range",
+      "Line 5: Forgot to set swapped = True after swapping, so the loop exits after 1 pass",
+      "Line 3: j must start from 1",
+      "Line 4: Cannot compare adjacent items"
+    ],
+    "correct": 1,
+    "explanation": "swapped is never set to True when a swap occurs, causing the loop to break after pass 1 regardless of whether the array is sorted."
+  },
+  {
+    "id": "Q103",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "error",
+    "question": "Find the error in this palindrome string two-pointer check:",
+    "code": "Line 1: def is_palindrome(s):\nLine 2:     left, right = 0, len(s) - 1\nLine 3:     while left < right:\nLine 4:         if s[left] != s[right]: return False\nLine 5:         left += 1\nLine 6:     return True",
+    "options": [
+      "Line 1: String cannot be checked for palindrome",
+      "Line 5: Missing right -= 1, causing an infinite loop or index error",
+      "Line 4: != cannot compare characters",
+      "Line 3: while condition must be left <= right"
+    ],
+    "correct": 1,
+    "explanation": "Both pointers must move towards the center: left += 1 and right -= 1. Forgetting right -= 1 breaks the loop."
+  },
+  {
+    "id": "Q104",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "error",
+    "question": "Find the error in this BFS graph traversal snippet:",
+    "code": "Line 1: queue = [start_node]\nLine 2: while queue:\nLine 3:     curr = queue.pop(0)\nLine 4:     for neighbor in graph[curr]:\nLine 5:         queue.append(neighbor)",
+    "options": [
+      "Line 1: Queue must be a set",
+      "Line 5: Missing visited set tracking; will cycle infinitely in graphs with cycles",
+      "Line 3: pop(0) is not allowed in BFS",
+      "Line 4: Cannot iterate neighbors"
+    ],
+    "correct": 1,
+    "explanation": "Without checking visited.add(neighbor), BFS will revisit nodes endlessly if the graph contains any cycle."
+  },
+  {
+    "id": "Q105",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "error",
+    "question": "Find the bug in this tree height calculation:",
+    "code": "Line 1: def tree_height(root):\nLine 2:     if root is None: return 0\nLine 3:     return max(tree_height(root.left), tree_height(root.right))",
+    "options": [
+      "Line 1: Tree height cannot be calculated recursively",
+      "Line 3: Forgot to add 1 for the current node (+ 1)",
+      "Line 2: Base case should return -1",
+      "Line 3: max() cannot take recursive functions"
+    ],
+    "correct": 1,
+    "explanation": "Height must count the current node: 1 + max(tree_height(root.left), tree_height(root.right)). Without + 1, it always returns 0."
+  },
+  {
+    "id": "Q106",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "error",
+    "question": "Find the bug in this circular queue full check (array size N):",
+    "code": "Line 1: def is_full(front, rear, N):\nLine 2:     return front == rear",
+    "options": [
+      "Line 1: Function cannot take 3 arguments",
+      "Line 2: front == rear indicates an EMPTY queue, not full (full is (rear + 1) % N == front)",
+      "Line 2: front cannot equal rear in queues",
+      "Line 1: N must be negative"
+    ],
+    "correct": 1,
+    "explanation": "In circular queues, front == rear traditionally represents an empty queue. Full condition is (rear + 1) % N == front."
+  },
+  {
+    "id": "Q107",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "error",
+    "question": "Find the error in this selection sort inner loop:",
+    "code": "Line 1: for i in range(len(arr)):\nLine 2:     min_idx = i\nLine 3:     for j in range(i, len(arr)):\nLine 4:         if arr[j] < arr[min_idx]:\nLine 5:             min_idx = j\nLine 6:     arr[i], arr[min_idx] = arr[min_idx], arr[i]",
+    "options": [
+      "Line 3: Inner loop should start from i + 1, since arr[i] is already min_idx",
+      "Line 6: Swapping cannot be done at Line 6",
+      "Line 4: Cannot compare arr[j] and arr[min_idx]",
+      "Line 1: len(arr) cannot be used"
+    ],
+    "correct": 0,
+    "explanation": "Comparing arr[i] with itself in pass 1 is redundant; the inner loop should scan range(i + 1, len(arr))."
+  },
+  {
+    "id": "Q108",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "error",
+    "question": "Find the error in this singly linked list reverse attempt:",
+    "code": "Line 1: prev = None\nLine 2: curr = head\nLine 3: while curr:\nLine 4:     curr.next = prev\nLine 5:     prev = curr\nLine 6:     curr = curr.next",
+    "options": [
+      "Line 1: prev must start at head",
+      "Line 4: Overwriting curr.next loses the reference to the rest of the list before moving to it",
+      "Line 5: prev cannot be assigned curr",
+      "Line 3: while curr is invalid syntax"
+    ],
+    "correct": 1,
+    "explanation": "Line 4 overwrites curr.next, so Line 6 moves backwards to prev instead of the next node. You must save next_node = curr.next first."
+  },
+  {
+    "id": "Q109",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "error",
+    "question": "Find the error in this insertion sort inner loop:",
+    "code": "Line 1: for i in range(1, len(arr)):\nLine 2:     key = arr[i]\nLine 3:     j = i - 1\nLine 4:     while j >= 0 and arr[j] > key:\nLine 5:         arr[j + 1] = arr[j]\nLine 6:         j -= 1\nLine 7:     # missing placement",
+    "options": [
+      "Line 1: Insertion sort must start at index 0",
+      "Line 7: Missing arr[j + 1] = key to place the key into its sorted slot",
+      "Line 4: while condition cannot check j >= 0",
+      "Line 5: Shifting cannot use j + 1"
+    ],
+    "correct": 1,
+    "explanation": "After shifting larger elements to the right, key must be inserted at arr[j + 1] = key."
+  },
+  {
+    "id": "Q110",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "error",
+    "question": "Find the error in this merge sort base condition:",
+    "code": "Line 1: def merge_sort(arr):\nLine 2:     if len(arr) == 0:\nLine 3:         return arr",
+    "options": [
+      "Line 1: Function cannot take arr",
+      "Line 2: Base condition should be len(arr) <= 1, since single-element arrays are already sorted",
+      "Line 3: return cannot return arr",
+      "Line 2: len(arr) cannot equal 0"
+    ],
+    "correct": 1,
+    "explanation": "If len(arr) == 1, it will attempt to divide forever without len(arr) <= 1 as the base case."
+  },
+  {
+    "id": "Q111",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "error",
+    "question": "Find the bug in this balanced parenthesis validator:",
+    "code": "Line 1: stack = []\nLine 2: for ch in s:\nLine 3:     if ch == \"(\": stack.append(ch)\nLine 4:     elif ch == \")\": stack.pop()\nLine 5: return len(stack) == 0",
+    "options": [
+      "Line 1: stack must be a dictionary",
+      "Line 4: Popping without checking if stack is empty causes IndexError for inputs like \")(\"",
+      "Line 5: len(stack) == 0 cannot be returned",
+      "Line 3: Cannot append string to list"
+    ],
+    "correct": 1,
+    "explanation": "If a closing bracket appears when the stack is empty (e.g. s = \")(\"), stack.pop() raises an IndexError. Must check if stack: before popping."
+  },
+  {
+    "id": "Q112",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "error",
+    "question": "Find the bug in this tree inorder traversal:",
+    "code": "Line 1: def inorder(root):\nLine 2:     if root:\nLine 3:         print(root.val)\nLine 4:         inorder(root.left)\nLine 5:         inorder(root.right)",
+    "options": [
+      "Line 1: Function name cannot be inorder",
+      "Line 3, 4, 5: This is PREORDER (Root, Left, Right); Inorder must visit Left, then Root, then Right",
+      "Line 2: if root is invalid",
+      "Line 4: Cannot call inorder recursively"
+    ],
+    "correct": 1,
+    "explanation": "Inorder traversal must visit inorder(root.left), then print(root.val), then inorder(root.right)."
+  },
+  {
+    "id": "Q113",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "type": "error",
+    "question": "Find the bug in this array rotation by 1 step:",
+    "code": "Line 1: # Rotate arr [1, 2, 3, 4] left to [2, 3, 4, 1]\nLine 2: first = arr[0]\nLine 3: for i in range(len(arr) - 1):\nLine 4:     arr[i] = arr[i + 1]\nLine 5: # missing assignment",
+    "options": [
+      "Line 2: first cannot store arr[0]",
+      "Line 5: Missing arr[-1] = first to put the rotated element at the end",
+      "Line 3: range must be len(arr)",
+      "Line 4: Shifting left is invalid"
+    ],
+    "correct": 1,
+    "explanation": "After shifting elements to the left, the saved first element must be placed at the final index: arr[-1] = first."
+  },
+  {
+    "id": "Q114",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "mcq",
+    "question": "What is the average time complexity of Quick Sort?",
+    "options": [
+      "O(n)",
+      "O(n log n)",
+      "O(n²)",
+      "O(log n)"
+    ],
+    "correct": 1,
+    "explanation": "Quick Sort partitions the array recursively, averaging O(n log n) time."
+  },
+  {
+    "id": "Q115",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "mcq",
+    "question": "What is the WORST-CASE time complexity of Quick Sort?",
+    "options": [
+      "O(n log n)",
+      "O(n²)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "correct": 1,
+    "explanation": "If unbalanced pivots are picked repeatedly, Quick Sort degrades to O(n²)."
+  },
+  {
+    "id": "Q116",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "mcq",
+    "question": "Which sorting algorithm is guaranteed to be STABLE in its standard implementation?",
+    "options": [
+      "Quick Sort",
+      "Merge Sort",
+      "Heap Sort",
+      "Selection Sort"
+    ],
+    "correct": 1,
+    "explanation": "Merge Sort maintains the relative order of duplicate elements."
+  },
+  {
+    "id": "Q117",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "mcq",
+    "question": "What algorithm finds shortest paths from a single source in non-negative weighted graphs?",
+    "options": [
+      "Dijkstra Algorithm",
+      "Prim Algorithm",
+      "Kruskal Algorithm",
+      "Floyd-Warshall"
+    ],
+    "correct": 0,
+    "explanation": "Dijkstra finds single-source shortest paths when all edge weights are non-negative."
+  },
+  {
+    "id": "Q118",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "mcq",
+    "question": "Which algorithm builds an MST by sorting all edges and picking the smallest non-cyclic edge?",
+    "options": [
+      "Dijkstra",
+      "Kruskal Algorithm",
+      "Bellman-Ford",
+      "Tarjan"
+    ],
+    "correct": 1,
+    "explanation": "Kruskal sorts edges by weight and uses Union-Find to prevent cycles."
+  },
+  {
+    "id": "Q119",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "mcq",
+    "question": "Which algorithm builds an MST by growing a tree from an arbitrary starting vertex?",
+    "options": [
+      "Prim Algorithm",
+      "Floyd-Warshall",
+      "KMP",
+      "Topological Sort"
+    ],
+    "correct": 0,
+    "explanation": "Prim grows a spanning tree from an initial vertex using minimum cut edges."
+  },
+  {
+    "id": "Q120",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "mcq",
+    "question": "What is the time complexity of BFS on a graph with V vertices and E edges using adjacency lists?",
+    "options": [
+      "O(V)",
+      "O(V + E)",
+      "O(V²)",
+      "O(E²)"
+    ],
+    "correct": 1,
+    "explanation": "BFS visits every vertex and explores every edge once, running in O(V + E)."
+  },
+  {
+    "id": "Q121",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "mcq",
+    "question": "What linear vertex ordering for a DAG guarantees that every directed edge (u, v) has u before v?",
+    "options": [
+      "Inorder traversal",
+      "Topological Sort",
+      "Dijkstra Order",
+      "Component Sort"
+    ],
+    "correct": 1,
+    "explanation": "Topological Sort linearizes DAG vertices respecting dependencies."
+  },
+  {
+    "id": "Q122",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "mcq",
+    "question": "What is the maximum number of edges in a simple undirected graph with V vertices?",
+    "options": [
+      "V",
+      "V - 1",
+      "V * (V - 1) / 2",
+      "V²"
+    ],
+    "correct": 2,
+    "explanation": "Each vertex can connect to V-1 others, giving V*(V-1)/2 unique undirected edges."
+  },
+  {
+    "id": "Q123",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "mcq",
+    "question": "What is the balance factor of an AVL tree node defined as?",
+    "options": [
+      "Nodes in left subtree minus right subtree",
+      "Height(Left Subtree) - Height(Right Subtree)",
+      "Total depth of the node",
+      "Degree of the node"
+    ],
+    "correct": 1,
+    "explanation": "In AVL trees, balance factor is Height(Left) - Height(Right)."
+  },
+  {
+    "id": "Q124",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "mcq",
+    "question": "What are the permitted balance factors for an AVL tree node to be considered balanced?",
+    "options": [
+      "0 only",
+      "-1, 0, or +1",
+      "-2 to +2",
+      "Any positive number"
+    ],
+    "correct": 1,
+    "explanation": "AVL trees strictly require node balance factors to be -1, 0, or +1."
+  },
+  {
+    "id": "Q125",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "mcq",
+    "question": "What data structure is ideal for autocomplete prefix search of words?",
+    "options": [
+      "Trie (Prefix Tree)",
+      "Stack",
+      "Queue",
+      "Disjoint Set"
+    ],
+    "correct": 0,
+    "explanation": "A Trie stores characters along tree paths, making prefix searches O(length of prefix)."
+  },
+  {
+    "id": "Q126",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "mcq",
+    "question": "What is the time complexity to search for a word of length m in a Trie?",
+    "options": [
+      "O(n)",
+      "O(m)",
+      "O(m * n)",
+      "O(log n)"
+    ],
+    "correct": 1,
+    "explanation": "Trie search depends only on the length of the query string m, taking O(m) time."
+  },
+  {
+    "id": "Q127",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "mcq",
+    "question": "What technique uses two pointers moving from opposite ends of a SORTED array to find pair sums?",
+    "options": [
+      "Two-Pointer Technique",
+      "Dynamic Programming",
+      "Breadth-First Search",
+      "Hashing only"
+    ],
+    "correct": 0,
+    "explanation": "Two pointers at low and high find target pair sums in a single O(n) pass."
+  },
+  {
+    "id": "Q128",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "mcq",
+    "question": "What is the time complexity to reverse a singly linked list with n nodes in-place?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n²)"
+    ],
+    "correct": 2,
+    "explanation": "Reversing next pointers takes a single linear pass of O(n) time and O(1) extra space."
+  },
+  {
+    "id": "Q129",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "mcq",
+    "question": "What data structure combination is traditionally used to implement an LRU Cache with O(1) operations?",
+    "options": [
+      "Hash Map + Doubly Linked List",
+      "Array + Stack",
+      "Queue + Binary Tree",
+      "Heap only"
+    ],
+    "correct": 0,
+    "explanation": "Hash Map gives O(1) lookups and Doubly Linked List allows O(1) removals and updates."
+  },
+  {
+    "id": "Q130",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "mcq",
+    "question": "What asymptotic notation describes an asymptotic UPPER BOUND on execution time?",
+    "options": [
+      "Big-O (O)",
+      "Big-Omega (Ω)",
+      "Big-Theta (Θ)",
+      "Little-o"
+    ],
+    "correct": 0,
+    "explanation": "Big-O notation provides an upper bound on growth rate."
+  },
+  {
+    "id": "Q131",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "mcq",
+    "question": "What asymptotic notation describes a TIGHT bound (both upper and lower bound)?",
+    "options": [
+      "Big-O (O)",
+      "Big-Omega (Ω)",
+      "Big-Theta (Θ)",
+      "Constant (1)"
+    ],
+    "correct": 2,
+    "explanation": "Big-Theta bounds a function from above and below within constant factors."
+  },
+  {
+    "id": "Q132",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "mcq",
+    "question": "What is the result of applying XOR operation to any integer x with itself (x ^ x)?",
+    "options": [
+      "x",
+      "0",
+      "1",
+      "-1"
+    ],
+    "correct": 1,
+    "explanation": "Any number XORed with itself equals 0 because matching bits cancel."
+  },
+  {
+    "id": "Q133",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "error",
+    "question": "Find the bug in this quicksort partition implementation:",
+    "code": "Line 1: def partition(arr, low, high):\nLine 2:     pivot = arr[high]\nLine 3:     i = low - 1\nLine 4:     for j in range(low, high):\nLine 5:         if arr[j] < pivot:\nLine 6:             i += 1\nLine 7:             arr[i], arr[j] = arr[j], arr[i]\nLine 8:     # missing pivot placement",
+    "options": [
+      "Line 2: Pivot cannot be chosen as arr[high]",
+      "Line 8: Forgot to swap pivot into position arr[i + 1], arr[high] = arr[high], arr[i + 1]",
+      "Line 4: range must start at 0",
+      "Line 5: < operator cannot compare with pivot"
+    ],
+    "correct": 1,
+    "explanation": "After partitioning, the pivot element at high must be placed into its final slot: arr[i + 1], arr[high] = arr[high], arr[i + 1]."
+  },
+  {
+    "id": "Q134",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "error",
+    "question": "Find the bug in this power-of-two bitwise check:",
+    "code": "Line 1: def is_power_of_two(n):\nLine 2:     return (n & (n - 1)) == 0",
+    "options": [
+      "Line 1: Bitwise cannot check powers of 2",
+      "Line 2: Fails for n <= 0; (0 & -1) == 0 returns True for 0 which is not a power of 2",
+      "Line 2: Must use | instead of &",
+      "Line 2: Parentheses are invalid"
+    ],
+    "correct": 1,
+    "explanation": "0 is not a power of two, but (0 & -1) == 0 evaluates to True. It must check: return n > 0 and (n & (n - 1)) == 0."
+  },
+  {
+    "id": "Q135",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "error",
+    "question": "Find the bug in this single non-duplicate number finder (using XOR):",
+    "code": "Line 1: def find_single(nums):\nLine 2:     res = 1\nLine 3:     for x in nums:\nLine 4:         res ^= x\nLine 5:     return res",
+    "options": [
+      "Line 1: Function name is invalid",
+      "Line 2: res must be initialized to 0, not 1 (0 ^ x = x, but 1 ^ x alters bits)",
+      "Line 4: ^= is not a valid operator",
+      "Line 3: for loop cannot iterate nums"
+    ],
+    "correct": 1,
+    "explanation": "Initializing res = 1 corrupts the XOR sum. The XOR identity is 0 ^ x = x, so res must start at 0."
+  },
+  {
+    "id": "Q136",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "error",
+    "question": "Find the bug in this recursive tree node count function:",
+    "code": "Line 1: def count_nodes(root):\nLine 2:     if root is None: return 0\nLine 3:     return count_nodes(root.left) + count_nodes(root.right)",
+    "options": [
+      "Line 1: Function cannot take root",
+      "Line 3: Missing + 1 for the current root node itself",
+      "Line 2: Base case must return 1",
+      "Line 3: Cannot add recursive calls"
+    ],
+    "correct": 1,
+    "explanation": "Total nodes is 1 (for current node) + count_nodes(root.left) + count_nodes(root.right). Without 1 +, it always returns 0."
+  },
+  {
+    "id": "Q137",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "error",
+    "question": "Find the bug in this DSU find function with path compression:",
+    "code": "Line 1: def find(parent, i):\nLine 2:     if parent[i] == i: return i\nLine 3:     return find(parent, parent[i])",
+    "options": [
+      "Line 1: DSU find cannot take two parameters",
+      "Line 3: Missing path compression assignment parent[i] = find(...)",
+      "Line 2: Base case condition is invalid",
+      "Line 3: Cannot call find recursively"
+    ],
+    "correct": 1,
+    "explanation": "To flatten tree paths, it must re-parent the node: parent[i] = find(parent, parent[i]); return parent[i]."
+  },
+  {
+    "id": "Q138",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "error",
+    "question": "Find the bug in this two-sum sorted array pointer adjustment:",
+    "code": "Line 1: while left < right:\nLine 2:     curr_sum = arr[left] + arr[right]\nLine 3:     if curr_sum == target: return [left, right]\nLine 4:     elif curr_sum < target: right -= 1\nLine 5:     else: left += 1",
+    "options": [
+      "Line 1: while condition must be left == right",
+      "Line 4 & 5: Pointer updates are reversed; when sum < target, left must increase (left += 1)",
+      "Line 2: Cannot sum two array elements",
+      "Line 3: return cannot return list"
+    ],
+    "correct": 1,
+    "explanation": "If curr_sum < target, we need a larger sum, so left += 1. If curr_sum > target, right -= 1."
+  },
+  {
+    "id": "Q139",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "error",
+    "question": "Find the bug in this min-heap bubble-up index calculation (1-indexed):",
+    "code": "Line 1: parent_idx = child_idx * 2",
+    "options": [
+      "Line 1: In a binary heap, parent index is child_idx // 2, not child_idx * 2",
+      "Line 1: Cannot multiply by 2",
+      "Line 1: Indexing must be 0-based only",
+      "Line 1: Variable name child_idx is invalid"
+    ],
+    "correct": 0,
+    "explanation": "In 1-based binary heaps, children of node i are at 2i and 2i+1, so parent is at i // 2."
+  },
+  {
+    "id": "Q140",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "error",
+    "question": "Find the bug in this cycle detection for directed graphs:",
+    "code": "Line 1: visited = set()\nLine 2: def has_cycle(u):\nLine 3:     if u in visited: return True\nLine 4:     visited.add(u)\nLine 5:     for v in graph[u]:\nLine 6:         if has_cycle(v): return True\nLine 7:     return False",
+    "options": [
+      "Line 1: visited cannot be a set",
+      "Line 7: Forgets to remove u from recursion call stack (visited.remove(u)), falsely flagging cross-edges as cycles",
+      "Line 3: Cannot return boolean",
+      "Line 5: for loop cannot iterate graph"
+    ],
+    "correct": 1,
+    "explanation": "A node visited in an earlier independent branch is not a cycle. Directed cycle detection requires a recursion stack set (or 3-color states) that is popped on backtrack."
+  },
+  {
+    "id": "Q141",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "error",
+    "question": "Find the bug in this 0/1 Knapsack recurrence:",
+    "code": "Line 1: # If item weight w[i] <= capacity c:\nLine 2: dp[i][c] = max(dp[i-1][c], val[i] + dp[i][c - w[i]])",
+    "options": [
+      "Line 1: Knapsack weights cannot be compared",
+      "Line 2: Uses dp[i][c - w[i]] (unbounded knapsack) instead of dp[i-1][c - w[i]] (0/1 knapsack)",
+      "Line 2: max() cannot take two arguments",
+      "Line 2: val[i] cannot be added"
+    ],
+    "correct": 1,
+    "explanation": "0/1 Knapsack allows each item at most once, requiring dp[i-1][c - w[i]]. dp[i][c - w[i]] is for Unbounded Knapsack."
+  },
+  {
+    "id": "Q142",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "error",
+    "question": "Find the bug in this Dijkstra edge relaxation:",
+    "code": "Line 1: if dist[u] + weight > dist[v]:\nLine 2:     dist[v] = dist[u] + weight\nLine 3:     heapq.heappush(pq, (dist[v], v))",
+    "options": [
+      "Line 1: Relaxation condition should be \"<\" (shorter path found), not \">\"",
+      "Line 2: Cannot update dist[v]",
+      "Line 3: heapq cannot push tuples",
+      "Line 1: Edge weight cannot be added"
+    ],
+    "correct": 0,
+    "explanation": "Dijkstra relaxes edges when a shorter path is found: if dist[u] + weight < dist[v]."
+  },
+  {
+    "id": "Q143",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "error",
+    "question": "Find the bug in this sliding window sum update (window size k):",
+    "code": "Line 1: window_sum = sum(arr[:k])\nLine 2: for i in range(k, len(arr)):\nLine 3:     window_sum += arr[i] + arr[i - k]",
+    "options": [
+      "Line 1: Cannot sum slice",
+      "Line 3: Should SUBTRACT the exiting element (window_sum += arr[i] - arr[i - k]), not add it",
+      "Line 2: range cannot start at k",
+      "Line 3: arr[i - k] is out of range"
+    ],
+    "correct": 1,
+    "explanation": "The new window sum adds the incoming element and subtracts the outgoing element: window_sum += arr[i] - arr[i - k]."
+  },
+  {
+    "id": "Q144",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "error",
+    "question": "Find the bug in this BST validation helper:",
+    "code": "Line 1: def is_bst(node, min_val, max_val):\nLine 2:     if node is None: return True\nLine 3:     if node.val <= min_val or node.val >= max_val: return False\nLine 4:     return is_bst(node.left, node.val, max_val) and is_bst(node.right, min_val, node.val)",
+    "options": [
+      "Line 2: Base case must return False",
+      "Line 4: Subtree bounds are swapped (left subtree max should be node.val; right subtree min should be node.val)",
+      "Line 3: node.val cannot be compared",
+      "Line 1: Function cannot take 3 arguments"
+    ],
+    "correct": 1,
+    "explanation": "For node.left, values must be bounded by (min_val, node.val). For node.right, bounded by (node.val, max_val)."
+  },
+  {
+    "id": "Q145",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "error",
+    "question": "Find the bug in this Kadane algorithm for maximum subarray sum:",
+    "code": "Line 1: max_so_far = arr[0]\nLine 2: curr_max = 0\nLine 3: for x in arr:\nLine 4:     curr_max += x\nLine 5:     if curr_max > max_so_far: max_so_far = curr_max\nLine 6:     # missing reset",
+    "options": [
+      "Line 1: max_so_far cannot be arr[0]",
+      "Line 6: Missing if curr_max < 0: curr_max = 0 to reset negative running sums",
+      "Line 3: Cannot iterate array directly",
+      "Line 5: if condition is invalid"
+    ],
+    "correct": 1,
+    "explanation": "Kadane algorithm must reset curr_max to 0 if it drops below zero (if curr_max < 0: curr_max = 0)."
+  },
+  {
+    "id": "Q146",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "error",
+    "question": "Find the bug in this queue using two stacks implementation:",
+    "code": "Line 1: def dequeue():\nLine 2:     if not stack2:\nLine 3:         while stack1:\nLine 4:             stack2.append(stack1.pop())\nLine 5:     # missing return",
+    "options": [
+      "Line 1: Queue cannot use two stacks",
+      "Line 5: Missing return stack2.pop() to pop and return the FIFO front element",
+      "Line 3: while stack1 is invalid",
+      "Line 4: Cannot append popped item"
+    ],
+    "correct": 1,
+    "explanation": "After transferring items to stack2, it must return stack2.pop()."
+  },
+  {
+    "id": "Q147",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "error",
+    "question": "Find the bug in this Trie insertion method:",
+    "code": "Line 1: def insert(self, word):\nLine 2:     curr = self.root\nLine 3:     for ch in word:\nLine 4:         if ch not in curr.children:\nLine 5:             curr.children[ch] = TrieNode()\nLine 6:     curr.is_end_of_word = True",
+    "options": [
+      "Line 1: Word must be a list",
+      "Line 5: Forgot to advance curr = curr.children[ch] inside the loop",
+      "Line 6: is_end_of_word cannot be boolean",
+      "Line 4: children cannot be a dictionary"
+    ],
+    "correct": 1,
+    "explanation": "Line 5 creates the child node, but curr never advances down the tree (curr = curr.children[ch] is missing)."
+  },
+  {
+    "id": "Q148",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "error",
+    "question": "Find the bug in this Floyd-Warshall triple nested loop:",
+    "code": "Line 1: for i in range(V):\nLine 2:     for j in range(V):\nLine 3:         for k in range(V):\nLine 4:             dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j])",
+    "options": [
+      "Line 4: dist matrix cannot use min()",
+      "Line 1, 2, 3: Intermediate vertex loop k MUST be the outermost loop, not the innermost",
+      "Line 3: range(V) cannot be nested 3 times",
+      "Line 4: dist[i][k] + dist[k][j] is an invalid formula"
+    ],
+    "correct": 1,
+    "explanation": "In Floyd-Warshall DP, the intermediate vertex k loop must be outermost so subproblems for vertices 0..k-1 are fully computed first."
+  },
+  {
+    "id": "Q149",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "error",
+    "question": "Find the bug in this binary search tree insertion:",
+    "code": "Line 1: def insert_bst(root, val):\nLine 2:     if root is None: return TreeNode(val)\nLine 3:     if val < root.val:\nLine 4:         insert_bst(root.left, val)\nLine 5:     else:\nLine 6:         insert_bst(root.right, val)\nLine 7:     return root",
+    "options": [
+      "Line 1: BST cannot have insert",
+      "Line 4 & 6: Must reassign root.left = insert_bst(...) and root.right = insert_bst(...), otherwise newly created node is not linked",
+      "Line 2: Cannot create TreeNode",
+      "Line 7: return root is invalid"
+    ],
+    "correct": 1,
+    "explanation": "When inserting into an empty subtree, TreeNode(val) is returned. Lines 4 and 6 must link it: root.left = insert_bst(root.left, val)."
+  },
+  {
+    "id": "Q150",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "type": "error",
+    "question": "Find the bug in this topological sort in-degree calculation:",
+    "code": "Line 1: in_degree = {u: 0 for u in graph}\nLine 2: for u in graph:\nLine 3:     for v in graph[u]:\nLine 4:         in_degree[u] += 1",
+    "options": [
+      "Line 1: in_degree must be a list",
+      "Line 4: Increments in_degree of source u instead of target neighbor v (should be in_degree[v] += 1)",
+      "Line 3: Cannot iterate graph[u]",
+      "Line 2: u is not a valid vertex"
+    ],
+    "correct": 1,
+    "explanation": "Edge (u, v) points into v, so the incoming degree of v increases: in_degree[v] += 1."
   }
 ]

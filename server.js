@@ -48,13 +48,20 @@ function publicState(viewer = 'admin') {
     players[id] = {
       name: p.name, ready: p.ready, score: p.score,
       connected: p.connected, hasAnswered: !!p.answer,
+      correctTimeMs: p.correctTimeMs || 0,
       status: state.phase === 'finished' ? 'FINISHED' :
         ['question', 'countdown', 'reveal'].includes(state.phase) ? 'PLAYING' :
         (p.ready ? 'READY' : 'WAITING')
     };
   }
   const history = state.history.map(h => ({
-    id: h.id, question: h.question,
+    id: h.id, question: h.question, type: h.type || 'mcq',
+    ...(viewer === 'admin' ? {
+      players: {
+        1: h.players && h.players[1] ? { choice: h.players[1].choice, correct: !!h.players[1].correct, timeMs: h.players[1].timeMs } : null,
+        2: h.players && h.players[2] ? { choice: h.players[2].choice, correct: !!h.players[2].correct, timeMs: h.players[2].timeMs } : null,
+      }
+    } : {}),
     ...(viewer === '1' || viewer === '2' ? {
       mine: h.players[viewer] ? { correct: !!h.players[viewer].correct } : null
     } : {})
@@ -63,6 +70,7 @@ function publicState(viewer = 'admin') {
     phase: state.phase, category: state.category, difficulty: state.difficulty,
     round: state.round, total: 5, question: q, deadline: state.deadline,
     history, winner: state.winner, winnerPlayerId: state.winnerPlayerId,
+    winnerTrack: state.winnerTrack || null, loserTrack: state.loserTrack || null,
     message: state.message, updated: state.updated, players, leaderboard
   };
 }
@@ -89,17 +97,43 @@ function readJson(req) {
     req.on('error', reject);
   });
 }
+function matchDifficulty(qDiff, targetDiff) {
+  if (targetDiff === 'All') return true;
+  if (targetDiff === 'Easy') return qDiff === 'Easy';
+  if (targetDiff === 'Medium') return qDiff === 'Easy' || qDiff === 'Medium';
+  if (targetDiff === 'Hard') return qDiff === 'Medium' || qDiff === 'Hard';
+  return true;
+}
 function eligibleQuestions() {
   return bank.filter(q =>
     (state.category === 'Mixed' || q.category === state.category) &&
-    (state.difficulty === 'All' || q.difficulty === state.difficulty)
+    matchDifficulty(q.difficulty, state.difficulty)
   );
 }
 function chooseQuestion() {
   let pool = eligibleQuestions().filter(q => !state.history.some(h => h.id === q.id));
   if (!pool.length) pool = eligibleQuestions();
   if (!pool.length) throw new Error('No questions found for this category and difficulty.');
-  return pool[Math.floor(Math.random() * pool.length)];
+
+  const errorCount = state.history.filter(h => h.type === 'error').length;
+  const mcqCount = state.history.filter(h => h.type !== 'error').length;
+  const errorPool = pool.filter(q => q.type === 'error');
+  const mcqPool = pool.filter(q => q.type !== 'error');
+
+  let candidatePool = pool;
+  if (errorPool.length > 0 && mcqPool.length > 0) {
+    if (errorCount < 2 && state.round % 2 === 0) {
+      candidatePool = errorPool;
+    } else if (mcqCount < 2 && state.round % 2 === 1) {
+      candidatePool = mcqPool;
+    } else if (errorCount >= 3) {
+      candidatePool = mcqPool.length ? mcqPool : errorPool;
+    } else if (mcqCount >= 3) {
+      candidatePool = errorPool.length ? errorPool : mcqPool;
+    }
+  }
+
+  return candidatePool[Math.floor(Math.random() * candidatePool.length)];
 }
 function resetAnswers() {
   for (const p of Object.values(state.players)) p.answer = null;
@@ -116,7 +150,7 @@ function finishRound() {
     } else if (p.answer) p.answer.correct = false;
   }
   state.history.push({
-    id: q.id, question: q.question,
+    id: q.id, type: q.type || 'mcq', question: q.question,
     players: {
       1: state.players[1].answer ? { ...state.players[1].answer } : null,
       2: state.players[2].answer ? { ...state.players[2].answer } : null
@@ -127,6 +161,7 @@ function finishRound() {
   state.deadline = Date.now() + 3000;
   state.updated = Date.now();
 }
+let matchCounter = 0;
 function finishMatch() {
   stopLoop();
   state.phase = 'finished';
@@ -136,6 +171,14 @@ function finishMatch() {
   else state.winnerPlayerId = null;
   state.winner = state.winnerPlayerId ? state.players[state.winnerPlayerId].name : 'DRAW';
   state.message = state.winnerPlayerId ? `${state.winner} wins the match!` : 'Match tied — DRAW!';
+  if (state.winnerPlayerId) {
+    matchCounter++;
+    state.winnerTrack = (matchCounter % 2 === 1) ? 'winner1' : 'winner2';
+    state.loserTrack = (matchCounter % 2 === 1) ? 'loser1' : 'loser2';
+  } else {
+    state.winnerTrack = null;
+    state.loserTrack = null;
+  }
   for (const id of ['1', '2']) {
     leaderboard.push({ name: state.players[id].name, score: state.players[id].score, at: new Date().toISOString() });
   }
@@ -223,7 +266,7 @@ const server = http.createServer(async (req, res) => {
         if (!['lobby', 'finished'].includes(state.phase)) return send(res, 409, { error: 'Match in progress.' });
         const category = ['DSA', 'Python', 'HTML/CSS', 'Mixed'].includes(action.category) ? action.category : 'DSA';
         const difficulty = ['All', 'Easy', 'Medium', 'Hard'].includes(action.difficulty) ? action.difficulty : 'Easy';
-        const pool = bank.filter(q => (category === 'Mixed' || q.category === category) && (difficulty === 'All' || q.difficulty === difficulty));
+        const pool = bank.filter(q => (category === 'Mixed' || q.category === category) && matchDifficulty(q.difficulty, difficulty));
         if (pool.length < 5) return send(res, 400, { error: 'This selection has fewer than 5 questions. Choose another category/difficulty.' });
         state.category = category; state.difficulty = difficulty; state.total = 5;
       } else if (action.type === 'start') {
@@ -246,7 +289,7 @@ const server = http.createServer(async (req, res) => {
       } else if (action.type === 'reset') {
         stopLoop(); state.players = freshPlayers(); state.phase = 'lobby'; state.round = 0;
         state.history = []; state.question = null; state.winner = null;
-        state.winnerPlayerId = null; state.deadline = 0;
+        state.winnerPlayerId = null; state.winnerTrack = null; state.loserTrack = null; state.deadline = 0;
         state.message = 'New match — players can join';
         console.log('[MATCH] Lobby reset');
       } else return send(res, 400, { error: 'Unknown action.' });
